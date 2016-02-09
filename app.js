@@ -6,9 +6,10 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
 
 // Routes
+var index = require('./routes/index');
 
 // Create the server instance
 var app = express();
@@ -36,6 +37,9 @@ app.use(express.static(__dirname + '/static'));
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
+
+// Add routes WON'T BE ENABLED UNTIL VIEWS ARE ENABLED
+//app.get('/', index.testRouting);
 
 // Start server
 http.createServer(app).listen(app.get('port'), function(){
