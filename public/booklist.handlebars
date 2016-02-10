@@ -1,0 +1,28 @@
+<!-- filename: booklist.handlebars
+	 created: 2/8/16 
+	 created by: Marisa Kanemoto | mkanemoto@ucsd.edu -->
+
+<!DOCTYPE html> 
+<html lang ="en">
+<head> 
+	<title>All Books</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bookpage.css" rel="stylesheet">
+</head>
+
+<body> 
+	{{#each books}}
+		<img src="{{coverSource}}"> 
+		<p class="title">{{title}}</p>
+		<p>By {{author}}</p>
+		<p>{{description}}</p>
+		<hr />
+	{{/each}}
+
+	<script src="/js/jquery-1.11.0.js"></script> 
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/bookpage.js"></script>
+</body>
+</html> <!--the last --> 

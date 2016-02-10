@@ -1,6 +1,4 @@
-/* filename: books.json 
- * created: 2/4/16 
- * created by: Marisa Kanemoto / mkanemoto@ucsd.edu */
+
 
 { 
 	"books": [
@@ -8,8 +6,9 @@
 			"title": "Harry Potter and the Sorceror's Stone",
 			"author": "J.K. Rowling",
 			"description": "The first installment in the world-famous Harry Potter series.",
-			"coverSource": "filepathhere"
+			"coverSource": "images/harryPotter.jpg"
 		},
+
 		{
 			"title": "Mathematics",
 			"author": "Author unknown",
