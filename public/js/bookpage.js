@@ -1,4 +1,4 @@
-/*-- filename: bookpage.js
+/* filename: bookpage.js
 	 created: 2/4/16 
 	 created by: Marisa Kanemoto | mkanemoto@ucsd.edu */
 
