@@ -1,14 +1,20 @@
-<!--filename: public/navbar-master.html 
+<!--filename: public/newRec.html 
 	created on: 2/11/16 
 	created by: Marisa Kanemoto | mkanemoto@ucsd.edu --> 
-<!-- 
-	It's just the code for the navbar so that we don't have to guess which version of the nav is most recent.  For example, some of the older version of the navbar have "recommended" spelled incorrectly.
 
-	REMEMBER TO ADD [ class="active" ] TO THE CURRENT PAGE. RIGHT NOW IT'S ON RECOMMENDED. 
-
-	Also, don't forget to link to the CSS and JS files, because those are both important!
---> 
-
+<!doctype html> 
+<html> 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--put everything else after those 3 meta tags -->
+	<title>New Recommendation</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/recommendations.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+</head>
+<body>
 	<nav class="navbar navbar-default">
 	<div class="container-fluid">
 	<!-- Brand and toggle get grouped for better mobile display -->
@@ -25,10 +31,17 @@
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="index">home</a></li>
-			<li><a href="liked.html">liked books</a></li>
+			<li class="active"><a href="liked.html">liked books</a></li>
 			<li><a href="history.html">history</a></li>
-			<li class="active"><a href="recommendations.html">reccommended</a></li>
+			<li><a href="recommendations.html">reccommended</a></li>
 		</ul>
 	</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 	</nav>
+	<h1>Recommend a Book</h1>
+	<p>(coming soon)</p>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
