@@ -40,8 +40,10 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes 
-app.get('/', index.testRouting);
+app.get('/', index.view);
 app.get('/book/:title', bookpage.viewBooks);
+app.get('/next', index.nextBook)
+app.get('/prev', index.prevBook)
 
 // Start server
 http.createServer(app).listen(app.get('port'), function(){

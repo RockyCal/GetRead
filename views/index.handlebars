@@ -55,13 +55,13 @@
    
     <center><div class="box">
       <div class = "content">
-        <center><a href="book/{{books.2.title}}"><img src="{{books.2.coverSource}}" class="img" width="200px"id = "cover"></a></center>
+        <center><a href="/book/{{title}}"><img src="{{currentBook.coverSource}}" class="img" width="200px"id = "cover"></a></center>
 
         <center>
           <div class="info">
-            <div class="title">{{books.2.title}}</div>
+            <div class="title">{{currentBook.title}}</div>
           </br>
-            <div class="author"> {{books.2.author}}</div>
+            <div class="author">{{currentBook.author}}</div>
           </div>
         </center>
       </div>
@@ -78,8 +78,8 @@
 
     <center>
        <div class = "row buttons" id = "move">
-        <a href = "carousel1.html" class = "btn btn-default" id = "prev">previous</a>
-        <a href = "carousel.html" class = "btn btn-default" id ="next">next</a>
+        <a href = "/prev" class = "btn btn-default" id = "prev">previous</a>
+        <a href = "/next" class = "btn btn-default" id ="next">next</a>
       </div>
     </center>
 
