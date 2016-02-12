@@ -22,10 +22,16 @@
 			"coverSource": "/images/book_cover.gif"
 		},
 		{
-			"title": "Penguins",
-			"author": "Raquel Calderon",
-			"description": "Everything you never wanted to know about penguins.",
-			"coverSource": "/images/book_cover.gif"
+			"title": "365 Penguins",
+			"author": "Jean-Luc Fromental",
+			"description": "A family find a penguin mysteriously delivered to their door every day of the year. At first they're cute, but with every passing day the penguins pile up, along with the family's problems. Who on earth is sending these kwaking critters?",
+			"coverSource": "/images/365_penguins.jpg"
+		},
+		{
+			"title": "The Koala Book",
+			"author": "Ann Sharp",
+			"description": "It's no secret that koalas are some of the best-loved creatures in the animal kingdom. Now for the first time, the koala's story is portrayed in a large format with 160striking photographs and accompanying text.",
+			"coverSource": "/images/the_koala_book.jpg"
 		}
 	]
 }
