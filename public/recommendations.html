@@ -12,8 +12,8 @@
 	<!--put everything else after those 3 meta tags -->
 	<title>Recommendations</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/index.css" rel="stylesheet">
 	<link href="css/recommendations.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -31,11 +31,10 @@
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="index.html">home</a></li>
+			<li><a href="index">home</a></li>
 			<li><a href="liked.html">liked books</a></li>
 			<li><a href="history.html">history</a></li>
 			<li class="active"><a href="recommendations.html">reccommended</a></li>
-			<li><a href="#">add a book</a></li>
 		</ul>
 	</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
@@ -43,19 +42,18 @@
 
 	<!-- content goes here -->
 	<h1>Recommendations</h1>
-	<form id="projectForm" role="form">
+	<form id="recForm" role="form">
 	<div class="form-group">
-	<label for="project">Please change the project:</label>
+	<label for="pages">Pages:</label>
 		<select class="form-control" id="project">
-			<option value="#rec-to-user">Books recommended to you</option>
-			<option value="#rec-user-sent">Books you've recommended</option>
-			<option value="#recommend">Send new recommendation</option>
+			<option value="#rec-to-user"><a href="userReceived.html">Books recommended to you</a></option>
+			<option value="#rec-user-sent"><a href="userRecommended.html">Books you've recommended</a></option>
+			<option value="#recommend"><a href="newRec.html">Send new recommendation</a></option>
 		</select>
 	</div>
 	</form>
-
 	<hr />
-
+	<!-- feed starts here -->
 	<div class="container">
 		<div class="recommended-book">          
 			<div class="recommended-book-pic">
@@ -64,7 +62,7 @@
 			<h3 class="from">from</h3>
 			<div class="recommended-from">
 				<img src="images/profile-pic.png" class="img img-responsive">
-				<h4>A User</h4>
+				<h5>A User</h5>
 			</div>
 		</div>
 	</div>
@@ -72,12 +70,12 @@
 	<div class="container">
 		<div class="recommended-book">          
 			<div class="recommended-book-pic">
-				<img src="images/book_cover.gif" class="img img-responsive">
+				<img src="images/the_koala_book.jpg" class="img img-responsive">
 			</div>           
 			<h3 class="from">from</h3>
 			<div class="recommended-from">
 				<img src="images/profile-pic.png" class="img img-responsive">
-				<h4>A User</h4>
+				<h5>A User</h5>
 			</div>
 		</div>
 	</div>
@@ -85,12 +83,12 @@
 	<div class="container">
 		<div class="recommended-book">          
 			<div class="recommended-book-pic">
-				<img src="images/book_cover.gif" class="img img-responsive">
+				<img src="images/365_penguins.jpg" class="img img-responsive">
 			</div>           
-			<h3 class="from">from</h3>
-			<div class="recommended-from">
+			<h3 class="to">to</h3>
+			<div class="recommended-to">
 				<img src="images/profile-pic.png" class="img img-responsive">
-				<h4>A User</h4>
+				<h5>A User</h5>
 			</div>
 		</div>
 	</div>
