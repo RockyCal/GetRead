@@ -6,20 +6,26 @@
 			"title": "Harry Potter and the Sorceror's Stone",
 			"author": "J.K. Rowling",
 			"description": "The first installment in the world-famous Harry Potter series.",
-			"coverSource": "images/harryPotter.jpg"
+			"coverSource": "/images/harryPotter.jpg"
 		},
 
 		{
 			"title": "Mathematics",
 			"author": "Author unknown",
 			"description": "A sixth-grade mathematics textbook.",
-			"coverSource": "filepathhere"
+			"coverSource": "/images/mathBook.jpg"
 		},
 		{ 
 			"title": "The Design of Everyday Things",
 			"author": "Donald A. Norman",
 			"description": "A seminal work by renowned cognitive scientist Don Norman.",
-			"coverSource": "filepathhere"
+			"coverSource": "/images/book_cover.gif"
+		},
+		{
+			"title": "Penguins",
+			"author": "Raquel Calderon",
+			"description": "Everything you never wanted to know about penguins.",
+			"coverSource": "/images/book_cover.gif"
 		}
 	]
 }

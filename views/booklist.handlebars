@@ -14,15 +14,20 @@
 
 <body> 
 	{{#each books}}
-		<img src="{{coverSource}}"> 
-		<p class="title">{{title}}</p>
-		<p>By {{author}}</p>
-		<p>{{description}}</p>
-		<hr />
+	<table>
+		<tr>
+			<img src="{{coverSource}}"> 
+		</tr>
+		<tr>
+			<p class="title">{{title}}</p>
+			<p>By {{author}}</p>
+			<p>{{description}}</p>
+		</tr>
+	</table>
 	{{/each}}
 
 	<script src="/js/jquery-1.11.0.js"></script> 
 	<script src="/js/bootstrap.js"></script>
-	<script src="/js/bookpage.js"></script>
+	<script src="../routes/bookpage.js"></script>
 </body>
 </html> <!--the last --> 
