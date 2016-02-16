@@ -11,8 +11,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--put everything else after those 3 meta tags -->
 	<title>Recommendations</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/recommendations.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
 </head>
 <body>
@@ -31,7 +31,7 @@
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="index">home</a></li>
+			<li><a href="/">home</a></li>
 			<li><a href="liked.html">liked books</a></li>
 			<li><a href="history.html">history</a></li>
 			<li class="active"><a href="recommendations.html">reccommended</a></li>
@@ -42,17 +42,32 @@
 
 	<!-- content goes here -->
 	<h1>Recommendations</h1>
-	<form id="recForm" role="form">
-	<div class="form-group">
-	<label for="pages">Pages:</label>
-		<select class="form-control" id="project">
-			<option value="#rec-to-user"><a href="userReceived.html">Books recommended to you</a></option>
-			<option value="#rec-user-sent"><a href="userRecommended.html">Books you've recommended</a></option>
-			<option value="#recommend"><a href="newRec.html">Send new recommendation</a></option>
-		</select>
+
+	<div class="dropdown">
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Pages:
+		<span class="caret"></span></button>
+		<ul class="dropdown-menu">
+			<li><a href="userReceived.html">Books recommended to you</a></li>
+			<li><a href="userRecommended.html">Books you've recommended</a></li>
+			<li><a href="newRec.html">Send new recommendations</a></li>
+		</ul>
 	</div>
-	</form>
 	<hr />
+
+	<!-- selector 2 shit that i may or may not revisit later 
+	<nav>
+	<ul>
+		<li><a href="#">Pages:</a>
+			<ul>
+				<li><a href="userReceived.html">Books recommended to you</a></li>
+				<li><a href="userRecommended.html">Books you've recommended</a></li>
+				<li><a href="newRec.html">Send new recommendations</a></li>
+			</ul>
+		</li>
+	</ul>
+	</nav>
+	<hr />
+	--> 
 	<!-- feed starts here -->
 	<div class="container">
 		<div class="recommended-book">          
