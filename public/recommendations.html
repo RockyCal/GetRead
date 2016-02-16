@@ -31,7 +31,7 @@
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="/">home</a></li>
+			<li><a href="index.html">home</a></li>
 			<li><a href="liked.html">liked books</a></li>
 			<li><a href="history.html">history</a></li>
 			<li class="active"><a href="recommendations.html">reccommended</a></li>
@@ -42,16 +42,43 @@
 
 	<!-- content goes here -->
 	<h1>Recommendations</h1>
+	<center>
+	<div class = "row">
+		<div class = "col-xs-6">
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter:
+				<span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="recommendations.html">All</a></li>
+					<li><a href="userReceived.html">Books recommended to you</a></li>
+					<li><a href="userRecommended.html">Books you've recommended</a></li>
+					
+				</ul>
+			</div>
+		</div>
 
-	<div class="dropdown">
-		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Pages:
-		<span class="caret"></span></button>
-		<ul class="dropdown-menu">
-			<li><a href="userReceived.html">Books recommended to you</a></li>
-			<li><a href="userRecommended.html">Books you've recommended</a></li>
-			<li><a href="newRec.html">Send new recommendations</a></li>
-		</ul>
+		<div class = "col-xs-6">
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Reccomend a Book!
+			</button>
+			<div class="collapse" id="collapseExample">
+			  <div class="well">
+
+
+			    <form method="POST" id="usrform">
+					 <h5> Book Title </h5>
+					 <input type="text" name="name">
+					 <h5> Send a Msg! </h5>
+					 <textarea rows="2" cols="12" name="comment" form="usrform"></textarea>
+					  
+					<input type="submit" value="Send">
+				</form>
+			  </div>
+			</div>
+		</div>
+
+
 	</div>
+</center>
 	<hr />
 
 	<!-- selector 2 shit that i may or may not revisit later 
@@ -77,7 +104,7 @@
 			<h3 class="from">from</h3>
 			<div class="recommended-from">
 				<img src="images/profile-pic.png" class="img img-responsive">
-				<h5>A User</h5>
+				<center><h5>Raquel</h5></center>
 			</div>
 		</div>
 	</div>
@@ -90,7 +117,7 @@
 			<h3 class="from">from</h3>
 			<div class="recommended-from">
 				<img src="images/profile-pic.png" class="img img-responsive">
-				<h5>A User</h5>
+				<center><h5>Marisa</h5></center>
 			</div>
 		</div>
 	</div>
@@ -98,12 +125,27 @@
 	<div class="container">
 		<div class="recommended-book">          
 			<div class="recommended-book-pic">
-				<img src="images/365_penguins.jpg" class="img img-responsive">
-			</div>           
-			<h3 class="to">to</h3>
-			<div class="recommended-to">
 				<img src="images/profile-pic.png" class="img img-responsive">
-				<h5>A User</h5>
+				<center><p>Kent</p></center>
+			</div>           
+			<h3 class="to">received</h3>
+			<div class="recommended-to">
+				<img src="images/365_penguins.jpg" class="img img-responsive">
+				
+			</div>
+		</div>
+	</div>
+<hr />
+	<div class="container">
+		<div class="recommended-book">          
+			<div class="recommended-book-pic">
+				<img src="images/profile-pic.png" class="img img-responsive">
+				<center><h5>Lexy</h5></center>
+			</div>           
+			<h3 class="to">liked</h3>
+			<div class="recommended-to">
+				<img src="images/365_penguins.jpg" class="img img-responsive">
+				
 			</div>
 		</div>
 	</div>
