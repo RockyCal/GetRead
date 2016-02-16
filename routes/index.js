@@ -5,10 +5,8 @@ var next = index + 1;
 
 exports.view = function(req, res) {
 	var currentBook = books["books"][index];
-	console.log(currentBook)
 	var title = currentBook.title;
 	res.render('index', {currentBook: currentBook, title: title});
-
 }
 
 exports.nextBook = function(req, res) {

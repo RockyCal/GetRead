@@ -9,5 +9,17 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	//console.log("Javascript connected!");
+	$('#likeBtn').click(likeBook);
+}
+
+function likeBook(e) {
+	e.preventDefault();
+
+	var bookTitle = $('.title').text();
+	var url = '/like/' + bookTitle;
+	$.get(url, function(result) {
+		if(result["liked"]) {
+			$('#likeBtn').css('color', 'red');
+		}
+	})
 }

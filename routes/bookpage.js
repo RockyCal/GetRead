@@ -4,10 +4,6 @@
 
 var books = require("../books.json");
 
-function initializePage() {
-	console.log("JavaScript active!");
-}
-
 exports.viewBooks = function(req, res){
 	var title = req.params.title;
 	var booksArr = books["books"];
@@ -17,7 +13,6 @@ exports.viewBooks = function(req, res){
 			break
 		}
 	}
-	console.log(book);
 	var author = book.author;
 	var coverSource = book.coverSource;
 	var description = book.description; 

@@ -11,6 +11,7 @@ var handlebars = require('express3-handlebars');
 // Routes
 var index = require('./routes/index');
 var bookpage = require('./routes/bookpage');
+var like = require('./routes/like')
 
 // Create the server instance
 var app = express();
@@ -22,7 +23,6 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
-
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.json());
@@ -42,8 +42,9 @@ if ('development' == app.get('env')) {
 // Add routes 
 app.get('/', index.view);
 app.get('/book/:title', bookpage.viewBooks);
-app.get('/next', index.nextBook)
-app.get('/prev', index.prevBook)
+app.get('/next', index.nextBook);
+app.get('/prev', index.prevBook);
+app.get('/like/:title', like.likeBook)
 
 // Start server
 http.createServer(app).listen(app.get('port'), function(){

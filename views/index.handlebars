@@ -46,8 +46,8 @@
   </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
   </nav>
-   
-    <center><div class="box">
+    <div id="{{currentBook.title}}" class="currentBook">
+      <center><div class="box">
       <div class = "content">
         <center><a href="/book/{{title}}"><img src="{{currentBook.coverSource}}" class="img" width="200px"id = "cover"></a></center>
 
@@ -58,14 +58,14 @@
             <div class="author">{{currentBook.author}}</div>
           </div>
         </center>
-      </div>
-    </div></center>
+      </div></div></center>
    
-    <center>  
-      <div class = "row buttons">
-        <a class = "btn btn-default">heart</a>
-      </div>
-    </center>
+      <center>  
+        <div class = "row buttons">
+          <a href="#" class = "btn btn-default" id="likeBtn">heart</a>
+        </div>
+      </center>
+    </div>
 
     <center>
        <div class = "row buttons" id = "move">
