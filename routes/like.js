@@ -12,6 +12,10 @@ function findBookByTitle(btitle){
 	}
 }
 
+exports.viewLikes = function(req, res) {
+	res.render('liked')
+}
+
 exports.likeBook = function(req, res) {
 	var book = findBookByTitle(req.params.title);
 	book.liked = true;

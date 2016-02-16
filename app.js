@@ -6,12 +6,14 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars');
+var handlebars = require('express-handlebars');
 
 // Routes
 var index = require('./routes/index');
 var bookpage = require('./routes/bookpage');
 var like = require('./routes/like')
+var rec = require('./routes/rec');
+var history = require('./routes/history')
 
 // Create the server instance
 var app = express();
@@ -32,7 +34,6 @@ app.use(express.cookieParser('Intro HCI secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname,'public')));
-app.use(express.static(__dirname + '/static'));
 
 // development only
 if ('development' == app.get('env')) {
@@ -41,6 +42,9 @@ if ('development' == app.get('env')) {
 
 // Add routes 
 app.get('/', index.view);
+app.get('/likedBooks', like.viewLikes);  // view liked books
+app.get('/recommendations', rec.view);   // view recommendations
+app.get('/history', history.view)
 app.get('/book/:title', bookpage.viewBooks);
 app.get('/next', index.nextBook);
 app.get('/prev', index.prevBook);
