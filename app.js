@@ -16,6 +16,7 @@ var rec = require('./routes/rec');
 var history = require('./routes/history');
 var user = require('./routes/user');
 
+
 // Create the server instance
 var app = express();
 
