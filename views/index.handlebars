@@ -40,7 +40,7 @@
    
       <center>  
         <div class = "row buttons">
-          <a href="#" class = "btn btn-default" id="likeBtn">
+          <a href="#" class = "{{#if liked}} liked {{/if}}btn btn-default" id="likeBtn">
             <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
           </a>
         </div>
@@ -55,7 +55,7 @@
     </center>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery-1.11.0.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/getRead.js"></script>

@@ -11,13 +11,20 @@
 	<!--put everything else after those 3 meta tags -->
 	<title>Liked</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/recommendations.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
 </head>
 <body>
 {{> nav active_liked=true}}
 	<h1>Liked Books</h1>
-	<p>(coming soon)</p>
+	<hr>
+	{{#each likes}}
+		<div>
+			<p>{{title}}</p>
+			<p>{{author}}</p>
+			<img src="{{coverSource}}" class="img" width="200px" id= "likedCover">
+		</div>
+		<hr>
+	{{/each}}
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
