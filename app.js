@@ -14,6 +14,7 @@ var bookpage = require('./routes/bookpage');
 var like = require('./routes/like')
 var rec = require('./routes/rec');
 var history = require('./routes/history')
+var user = require('./routes/user')
 
 // Create the server instance
 var app = express();
@@ -49,6 +50,7 @@ app.get('/book/:title', bookpage.viewBooks);
 app.get('/next', index.nextBook);
 app.get('/prev', index.prevBook);
 app.get('/like/:title', like.likeBook)
+app.get('/signup',user.view)
 
 // Start server
 http.createServer(app).listen(app.get('port'), function(){
