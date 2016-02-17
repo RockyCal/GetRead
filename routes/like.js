@@ -20,7 +20,14 @@ exports.viewLikes = function(req, res) {
 
 exports.likeBook = function(req, res) {
 	var book = findBookByTitle(req.params.title);
-	book.liked = true;
-	data["likes"].push(book);
+	if(book.liked){
+		book.liked = false;
+		var idx = data["likes"].indexOf(book)
+		data["likes"].splice(idx, 1);
+	}
+	else{
+		book.liked = true;
+		data["likes"].push(book);
+	}
 	res.json(book);
 }
