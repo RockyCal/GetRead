@@ -13,7 +13,7 @@ var index = require('./routes/index');
 var bookpage = require('./routes/bookpage');
 var like = require('./routes/like')
 var rec = require('./routes/rec');
-var history = require('./routes/history')
+var history = require('./routes/history');
 
 // Create the server instance
 var app = express();
