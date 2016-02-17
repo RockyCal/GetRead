@@ -50,8 +50,9 @@ app.get('/history', history.view)
 app.get('/book/:title', bookpage.viewBooks);
 app.get('/next', index.nextBook);
 app.get('/prev', index.prevBook);
-app.get('/like/:title', like.likeBook)
-app.get('/signup',user.view)
+app.get('/like/:title', like.likeBook);
+app.get('/signup',user.view);
+app.get('/login', user.login);
 
 // Start server
 http.createServer(app).listen(app.get('port'), function(){
