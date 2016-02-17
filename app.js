@@ -13,12 +13,8 @@ var index = require('./routes/index');
 var bookpage = require('./routes/bookpage');
 var like = require('./routes/like')
 var rec = require('./routes/rec');
-<<<<<<< HEAD
 var history = require('./routes/history')
 var user = require('./routes/user')
-=======
-var history = require('./routes/history');
->>>>>>> 2a967c73652e6af226387d0ecba5426ac41c5950
 
 // Create the server instance
 var app = express();
