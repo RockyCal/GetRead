@@ -1,6 +1,30 @@
 .header {
 	background-color: #4D7D9C;
+	margin-top: 0px;
+	padding: 0.5em 0;
+	margin-bottom: .5em;
 }
+
+.header-brand {
+	font-size: 36px;
+	font-weight: 500;
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+
+#login_form {
+	padding: 0 10px;
+}
+
+.header-subtext {
+	font-weight: 300;
+	color: #333;
+	text-align: center;
+	margin: 0;
+	font-size: 20px;
+}
+
 .navbar{
 	background-color: #4D7D9C;
 }
