@@ -1,6 +1,7 @@
 var books_data = require('../books.json');
 var books = books_data["books"];
 var data = require('../data.json');
+var likes = data["likes"];
 
 /* helper function to find books */
 function findBookByTitle(btitle){
@@ -22,12 +23,12 @@ exports.likeBook = function(req, res) {
 	var book = findBookByTitle(req.params.title);
 	if(book.liked){
 		book.liked = false;
-		var idx = data["likes"].indexOf(book)
-		data["likes"].splice(idx, 1);
+		var idx = likes.indexOf(book)
+		likes.splice(idx, 1);
 	}
 	else{
 		book.liked = true;
-		data["likes"].push(book);
+		likes.push(book);
 	}
 	res.json(book);
 }

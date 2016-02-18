@@ -7,7 +7,8 @@
 			"author": "J.K. Rowling",
 			"description": "The first installment in the world-famous Harry Potter series.",
 			"coverSource": "/images/harryPotter.jpg",
-			"liked": false
+			"liked": false,
+			"recommended": false
 		},
 
 		{
@@ -15,28 +16,32 @@
 			"author": "Author unknown",
 			"description": "A sixth-grade mathematics textbook.",
 			"coverSource": "/images/mathBook.jpg",
-			"liked": false
+			"liked": false,
+			"recommended": false
 		},
 		{ 
 			"title": "The Design of Everyday Things",
 			"author": "Donald A. Norman",
 			"description": "A seminal work by renowned cognitive scientist Don Norman.",
 			"coverSource": "/images/book_cover.gif",
-			"liked": false
+			"liked": false,
+			"recommended": false
 		},
 		{
 			"title": "365 Penguins",
 			"author": "Jean-Luc Fromental",
 			"description": "A family find a penguin mysteriously delivered to their door every day of the year. At first they're cute, but with every passing day the penguins pile up, along with the family's problems. Who on earth is sending these kwaking critters?",
 			"coverSource": "/images/365_penguins.jpg",
-			"liked": false
+			"liked": false,
+			"recommended": false
 		},
 		{
 			"title": "The Koala Book",
 			"author": "Ann Sharp",
 			"description": "It's no secret that koalas are some of the best-loved creatures in the animal kingdom. Now for the first time, the koala's story is portrayed in a large format with 160striking photographs and accompanying text.",
 			"coverSource": "/images/the_koala_book.jpg",
-			"liked": false
+			"liked": false,
+			"recommended": false
 		}
 	]
 }

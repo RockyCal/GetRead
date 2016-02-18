@@ -33,7 +33,6 @@
         <center>
           <div class="info">
             <div class="title">{{currentBook.title}}</div>
-          <!--</br>-->
             <div class="author">{{currentBook.author}}</div>
           </div>
         </center>
@@ -41,9 +40,11 @@
    
       <center>  
         <div class = "row buttons">
-          <a href="#" class = "{{#if liked}} liked {{/if}}btn btn-default" id="likeBtn">
+          <button class = "{{#if liked}} liked {{/if}} bookBtn btn btn-default" id="likeBtn" type="submit">
             <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-          </a>
+          </button>
+          <button class="{{#if recommended}} recommended {{/if}}booktBtn btn btn-default" id="recBtn">r
+          </button>
         </div>
       </center>
     </div>

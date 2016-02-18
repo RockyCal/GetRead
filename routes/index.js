@@ -7,7 +7,8 @@ exports.view = function(req, res) {
 	var currentBook = books["books"][index];
 	var title = currentBook.title;
 	var liked = currentBook.liked;
-	res.render('index', {currentBook: currentBook, title: title, liked:liked});
+	var recommended = currentBook.recommended
+	res.render('index', {currentBook: currentBook, title: title, liked: liked, recommended: recommended});
 }
 
 exports.nextBook = function(req, res) {
@@ -20,7 +21,8 @@ exports.nextBook = function(req, res) {
 	var currentBook = books["books"][index];
 	var title = currentBook.title;
 	var liked = currentBook.liked;
-	res.render('index', {currentBook: currentBook, title: title, liked:liked});
+	var recommended = currentBook.recommended
+	res.render('index', {currentBook: currentBook, title: title, liked: liked, recommended: recommended});
 }
 
 exports.prevBook = function(req, res) {
@@ -34,5 +36,6 @@ exports.prevBook = function(req, res) {
 	var currentBook = books["books"][index];
 	var title = currentBook.title;
 	var liked = currentBook.liked;
-	res.render('index', {currentBook: currentBook, title: title, liked:liked});
+	var recommended = currentBook.recommended
+	res.render('index', {currentBook: currentBook, title: title, liked: liked, recommended: recommended});
 }

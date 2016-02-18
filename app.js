@@ -51,6 +51,7 @@ app.get('/book/:title', bookpage.viewBooks);
 app.get('/next', index.nextBook);
 app.get('/prev', index.prevBook);
 app.get('/like/:title', like.likeBook);
+app.get('/recommend/:title', rec.recBook);
 app.get('/signup',user.view);
 app.get('/login', user.login);
 

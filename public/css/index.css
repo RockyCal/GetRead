@@ -17,6 +17,15 @@
 	color: red;
 }
 
+#recBtn {
+	font-weight: 600;
+}
+
+.recommended {
+	background-color: #6600cc;
+	color: white;
+}
+
 #login_form {
 	padding: 0 10px;
 }
