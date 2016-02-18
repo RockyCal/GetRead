@@ -1,5 +1,21 @@
 {
 	"users": [
+		{
+			"username": "test",
+			"email": "user@testing.com",
+			"password": "testing",
+			"friends": [
+				{
+					"username": "mkanemoto"
+				},
+				{
+					"username": "akim"
+				},
+				{
+					"username": "rcaldero"
+				}
+			]
+		},
 		{ 
 			"username": "mkanemoto",
 			"email": "mkanemoto@ucsd.edu",
@@ -11,9 +27,14 @@
 			"password": "akim"
 		},
 		{
-			"username": "test",
+			"username": "mark",
 			"email": "marisa.kanemoto@gmail.com",
 			"password": "test"
+		},
+		{
+			"username": "rcaldero",
+			"email": "calderon.rocky@gmail.com",
+			"password": "rcaldero"
 		}
 	]
 }
