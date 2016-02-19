@@ -1,36 +1,21 @@
-/* filename: public/css/recommendations.css
-	created on: 2/11/16 
-	created by: Marisa Kanemoto | mkanemoto@ucsd.edu */
+.boxes {
+	display: inline-block;
 
-hr {
-	border-top: 1px dashed #d9d9d9;
 }
 
-/* keep recommendations elements inline */
-.recommended-book-pic {
-	max-width: 60px;
-	display: inline-block;
-	margin-right: 3em;
+#pic{
+	padding-left: 20px;
+	float:left;
 }
-.from {
-	display: inline-block;
-	margin-bottom: 0;
+
+#info{
+	margin-top: -10px;
+	padding-left: 20px;
+	float: right;
+
 }
-.recommended-from {
-	max-width: 60px;
-	display: inline-block;
-	margin-left: 6em;
-}
-.to {
-	display: inline-block;
-	margin-bottom: 0;
-}
-.recommended-to {
-	max-width: 60px;
-	display: inline-block;
-	margin-left: 6em;
-}
-form {
-	margin-left: 3em;
-	margin-right: 3em;
+
+.container2 {
+	width: 200px;
+
 }

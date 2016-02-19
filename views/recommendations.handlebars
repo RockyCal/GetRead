@@ -15,51 +15,25 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/getRead.css">
+	<link rel="stylesheet" type="text/css" href="css/getRead.css">
+	
 </head>
 <body>
 	{{> nav active_recommendations=true}}
 
 	<!-- content goes here -->
-	<h1 class="page-heading">Recommendations</h1>
-	<center>
-	<div class = "row">
-		<div class = "col-xs-6">
-			<div class="dropdown">
-				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter:
-				<span class="caret"></span></button>
-				<ul class="dropdown-menu">
-					<li><a href="recommendations.html">All</a></li>
-					<li><a href="userReceived.html">Books recommended to you</a></li>
-					<li><a href="userRecommended.html">Books you've recommended</a></li>
-					
-				</ul>
-			</div>
+	<div class = "boxes">
+		<div class = "container1" id = "pic">
+			<img src="images/profJin.png" class="img img-responsive" width = "120px">
 		</div>
 
-		<div class = "col-xs-6">
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Reccomend a Book!
-			</button>
-			<div class="collapse" id="collapseExample">
-			  <div class="well">
-
-
-			    <form method="POST" id="usrform">
-					 <h5> Book Title </h5>
-					 <input type="text" name="name">
-					 <h5> Send a Msg! </h5>
-					 <textarea rows="2" cols="12" name="comment" form="usrform"></textarea>
-					  
-					<input type="submit" value="Send">
-				</form>
-			  </div>
-			</div>
+		<div class = "container2" id ="info">
+			<h3> Jin Hwang (Demo) </h3>
+			<p> 42 reccomendations</p>
+			<p> 28 likes </p>
 		</div>
-
-
 	</div>
-</center>
-	<hr />
-
+	
 	<!-- selector 2 shit that i may or may not revisit later 
 	<nav>
 	<ul>
@@ -75,61 +49,55 @@
 	<hr />
 	--> 
 	<!-- feed starts here -->
-	<div class="container">
-		<div class="recommended-book">          
-			<div class="recommended-book-pic">
-				<img src="images/book_cover.gif" class="img img-responsive">
-			</div>           
-			<h3 class="from">from</h3>
-			<div class="recommended-from">
-				<img src="images/profile-pic.png" class="img img-responsive">
-				<center><h5>Raquel</h5></center>
-			</div>
+	<div class="boxes">
+		<h2> Recent Activity </h2>
+		<hr>
+	</div>
+
+	<div class = "boxes">
+		<div class = "container1" id = "pic">
+			<img src="images/the_koala_book.jpg" class="img img-responsive" width = "60px">
+		</div>
+
+		<div class = "container2" id ="info">
+			<p> <mark>Kevin Lim</mark> recommended The Koala Book to you </p>
+		
 		</div>
 	</div>
-	<hr />
-	<div class="container">
-		<div class="recommended-book">          
-			<div class="recommended-book-pic">
-				<img src="images/the_koala_book.jpg" class="img img-responsive">
-			</div>           
-			<h3 class="from">from</h3>
-			<div class="recommended-from">
-				<img src="images/profile-pic.png" class="img img-responsive">
-				<center><h5>Marisa</h5></center>
-			</div>
+	<hr>
+	<div class = "boxes">
+		<div class = "container1" id = "pic">
+			<img src="images/goldHeart.png" class="img img-responsive" width = "60px">
 		</div>
-	</div>
-	<hr />
-	<div class="container">
-		<div class="recommended-book">          
-			<div class="recommended-book-pic">
-				<img src="images/profile-pic.png" class="img img-responsive">
-				<center><p>Kent</p></center>
-			</div>           
-			<h3 class="to">received</h3>
-			<div class="recommended-to">
-				<img src="images/365_penguins.jpg" class="img img-responsive">
-				
-			</div>
-		</div>
-	</div>
-<hr />
-	<div class="container">
-		<div class="recommended-book">          
-			<div class="recommended-book-pic">
-				<img src="images/profile-pic.png" class="img img-responsive">
-				<center><h5>Lexy</h5></center>
-			</div>           
-			<h3 class="to">liked</h3>
-			<div class="recommended-to">
-				<img src="images/365_penguins.jpg" class="img img-responsive">
-				
-			</div>
+
+		<div class = "container2" id ="info">
+			<p> <mark>Marisa</mark> liked your recommendation Naruto!</p>
+		
 		</div>
 	</div>
 	<hr />
 
+	<div class = "boxes">
+		<div class = "container1" id = "pic">
+			<img src="images/book2book.png" class="img img-responsive" width = "60px">
+		</div>
+
+		<div class = "container2" id ="info">
+			<p> <mark> Alex Kim </mark> recommended One Punch Man </p>
+		
+		</div>
+	</div>
+	<hr>
+	<div class = "boxes">
+		<div class = "container1" id = "pic">
+			<img src="images/harryPotter.jpg" class="img img-responsive" width = "60px">
+		</div>
+
+		<div class = "container2" id ="info">
+			<p> <mark>Marisa</mark> recommended Harry Potter1 to you </p>
+		
+		</div>
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
