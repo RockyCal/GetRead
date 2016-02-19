@@ -1,12 +1,10 @@
-
-
 { 
 	"books": [
 		{
 			"title": "Harry Potter and the Sorceror's Stone",
 			"author": "J.K. Rowling",
 			"description": "The first installment in the world-famous Harry Potter series.",
-			"coverSource": "/images/harryPotter.jpg",
+			"coverSource": "/images/harry_potter_sorcerors.jpg",
 			"liked": false,
 			"recommended": false
 		},
@@ -23,7 +21,7 @@
 			"title": "The Design of Everyday Things",
 			"author": "Donald A. Norman",
 			"description": "A seminal work by renowned cognitive scientist Don Norman.",
-			"coverSource": "/images/book_cover.gif",
+			"coverSource": "/images/design_everyday_things.gif",
 			"liked": false,
 			"recommended": false
 		},
@@ -38,8 +36,32 @@
 		{
 			"title": "The Koala Book",
 			"author": "Ann Sharp",
-			"description": "It's no secret that koalas are some of the best-loved creatures in the animal kingdom. Now for the first time, the koala's story is portrayed in a large format with 160striking photographs and accompanying text.",
+			"description": "It's no secret that koalas are some of the best-loved creatures in the animal kingdom. Now for the first time, the koala's story is portrayed in a large format with 160 striking photographs and accompanying text.",
 			"coverSource": "/images/the_koala_book.jpg",
+			"liked": false,
+			"recommended": false
+		},
+		{
+			"title": "The Cellist of Sarajevo",
+			"author": "Steven Galloway",
+			"description": "A spare and haunting, wise and beautiful novel about war and the endurance of the human spirit and the subtle ways individuals reclaim their humanity.",
+			"coverSource": "/images/cellist_of_sarajevo.jpg",
+			"liked": false,
+			"recommended": false
+		},
+		{
+			"title": "One Punch Man, vol. 1",
+			"author": "Yusuke Murata and One",
+			"description": "Adapted from the wildly popular webcomic, Yusuke Murata's adaptation of One Punch Man follows the reluctant hero Saitama as he seeks a worthy opponent.",
+			"coverSource": "/images/one_punch_man.png",
+			"liked": false,
+			"recommended": false
+		},
+		{
+			"title": "Hop on Pop",
+			"author": "Dr. Seuss",
+			"description": "First published in 1963, Hop on Pop remains a perennial favorite when it comes to teaching kids to read. Here, as in most of his extensive body of work, Dr. Seuss creates uncomplicated, monosyllabic rhymes to foster learning and inspire children to read.",
+			"coverSource": "/images/hop_on_pop.jpg",
 			"liked": false,
 			"recommended": false
 		}

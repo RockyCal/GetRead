@@ -1,0 +1,30 @@
+<!--filename: GetRead/public/views/friends.handlebars
+	created on: 2/18/16--> 
+<!doctype html> 
+<html> 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--put everything else after those 3 meta tags -->
+	<title>Liked</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/getRead.css">
+</head>
+<body>
+{{> nav active_friends=true}}
+	<h1 class="page-heading">My Friends</h1>
+	{{#each users.username.friends}}
+		<div>
+			<p>{{title}}</p>
+			<p>{{author}}</p>
+			<img src="{{coverSource}}" class="img" width="200px" id= "likedCover">
+		</div>
+		<hr />
+	{{/each}}
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
