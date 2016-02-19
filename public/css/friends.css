@@ -1,0 +1,28 @@
+/*  filename: GetRead/public/css/friends.css
+	created on: 2/18/16 */
+
+.friend {
+	display: inline-block;
+}
+
+.picContainer {
+	float: left;
+}
+
+
+.everythingElse {
+	float: right;
+	margin-left: 50px;
+}
+
+.username {
+	font-weight: 400;
+}
+
+.profPic {
+	width: 100px;
+	height: 100px;
+}
+
+
+
