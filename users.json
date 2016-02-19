@@ -19,22 +19,26 @@
 		{ 
 			"username": "mkanemoto",
 			"email": "mkanemoto@ucsd.edu",
-			"password": "mkanemoto"
+			"password": "mkanemoto",
+			"profPic": "/images/profMarisa.png"
 		},
 		{
 			"username": "akim",
 			"email": "akim0504@ucsd.edu", 
-			"password": "akim"
+			"password": "akim",
+			"profPic": "/images/profAlex.png"
 		},
 		{
-			"username": "mark",
+			"username": "tim",
 			"email": "marisa.kanemoto@gmail.com",
-			"password": "test"
+			"password": "tim",
+			"profPic": "/images/profTim.png"
 		},
 		{
 			"username": "rcaldero",
 			"email": "calderon.rocky@gmail.com",
-			"password": "rcaldero"
+			"password": "rcaldero",
+			"profPic": "/images/profRocky.png"
 		}
 	]
 }
