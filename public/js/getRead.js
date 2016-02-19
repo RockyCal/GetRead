@@ -10,7 +10,11 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$('#likeBtn').click(likeBook);
-	$('#recBtn').click(recBook);
+	$('#recBtn').click(function(){
+		$("#recommendModal").modal();
+	})
+	$('#recCommunity').click(recBookCommunity);
+	$('#recommendToFriendSubmit').click(recBookFriend);
 }
 
 function likeBook(e) {
@@ -35,7 +39,29 @@ function likeBook(e) {
 	})
 }
 
-function recBook(e) {
+function recBookCommunity(e) {
+	e.preventDefault();
+
+	var bookTitle = $('.title').text();
+	var url = '/recommend/' + bookTitle;
+	$.get(url, function(result) {
+		$('#recBtn').blur();
+		if(result["recommended"]) {
+			$('#recBtn').css({
+				'background-color': '#6600cc',
+				'color': 'white'
+			});
+		}
+		else {
+			$('#recBtn').css({
+				'background-color': '#fff',
+				'color': '#333'
+			});
+		}
+	})
+}
+
+function recBookFriend(e) {
 	e.preventDefault();
 
 	var bookTitle = $('.title').text();

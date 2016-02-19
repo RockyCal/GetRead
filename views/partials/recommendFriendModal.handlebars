@@ -1,0 +1,32 @@
+<!-- filename: recommendModal.handlebars
+   created: 2/18/16 
+   created by: Raquel Calderon -->
+   
+<div id="recommendFriendModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content -->
+		<div class="modal-content">        
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Recommend to a Friend</h4>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="selFriend">Select list:</label>
+						<select class="form-control" id="selFriend">
+							{{#each friends}}
+							<option>{{username}}</option>
+							{{/each}}
+						</select>
+					</div>
+				</form>
+        	</div>
+        	<div class="modal-footer">
+        		<button id="recommendToFriendSubmit" type="button" class="btn btn-primary" data-dismiss="modal">Recommend!</button>
+        		<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        	</div>
+		</div>
+	</div>
+</div>

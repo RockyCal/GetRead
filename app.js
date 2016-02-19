@@ -53,6 +53,7 @@ app.get('/next', index.nextBook);
 app.get('/prev', index.prevBook);
 app.get('/like/:title', like.likeBook);
 app.get('/recommend/:title', rec.recBook);
+app.get('/recommend/:title/:to', rec.recBook);
 app.get('/signup', user.view);
 app.get('/login', user.login);
 app.get('/friends', friends.view); 	//marisa says: i hope i'm doing this right

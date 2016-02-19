@@ -53,6 +53,19 @@
 		<h2> Recent Activity </h2>
 		<hr>
 	</div>
+	{{#each recommendations}}
+	<div class = "boxes">
+		<div class = "container1" id = "pic">
+			<img src="{{coverSource}}" class="img img-responsive" width = "60px">
+		</div>
+
+		<div class = "container2" id ="info">
+			<p> <mark>You</mark> recommended {{title}} {{#if toFriend}}to {{to}}{{/if}}</p>
+		
+		</div>
+	</div>
+	<hr>
+	{{/each}}
 
 	<div class = "boxes">
 		<div class = "container1" id = "pic">
