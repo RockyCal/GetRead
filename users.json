@@ -5,6 +5,7 @@
 			"fullName": "Jin Hwang",
 			"email": "user@testing.com",
 			"password": "testing",
+			"profPic": "/images/profile-pic.png",
 			"friends": [
 				{
 					"username": "mkanemoto"
@@ -22,28 +23,39 @@
 			"fullName": "Marisa Kanemoto",
 			"email": "mkanemoto@ucsd.edu",
 			"password": "mkanemoto",
-			"profPic": "/images/profMarisa.png"
+			"profPic": "/images/profMarisa.png",
+			"friends": [
+				{
+					"username": "akim"
+				},
+				{
+					"username": "rcaldero"
+				}
+			]
 		},
 		{
 			"username": "akim",
 			"fullName": "Alex Kim",
 			"email": "akim0504@ucsd.edu", 
 			"password": "akim",
-			"profPic": "/images/profAlex.png"
+			"profPic": "/images/profAlex.png",
+			"friends": []
 		},
 		{
 			"username": "tim",
 			"fullName": "Tim Dude",
 			"email": "marisa.kanemoto@gmail.com",
 			"password": "tim",
-			"profPic": "/images/profTim.png"
+			"profPic": "/images/profTim.png",
+			"friends": []
 		},
 		{
 			"username": "rcaldero",
 			"fullName": "Raquel Calderon",
 			"email": "calderon.rocky@gmail.com",
 			"password": "rcaldero",
-			"profPic": "/images/profRocky.png"
+			"profPic": "/images/profRocky.png",
+			"friends": []
 		}
 	]
 }
