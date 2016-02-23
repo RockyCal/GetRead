@@ -4,6 +4,7 @@
 			"username": "test",
 			"email": "user@testing.com",
 			"password": "testing",
+			"profPic": "/images/profile-pic.png",
 			"friends": [
 				{
 					"username": "mkanemoto"
@@ -20,25 +21,36 @@
 			"username": "mkanemoto",
 			"email": "mkanemoto@ucsd.edu",
 			"password": "mkanemoto",
-			"profPic": "/images/profMarisa.png"
+			"profPic": "/images/profMarisa.png",
+			"friends": [
+				{
+					"username": "akim"
+				},
+				{
+					"username": "rcaldero"
+				}
+			]
 		},
 		{
 			"username": "akim",
 			"email": "akim0504@ucsd.edu", 
 			"password": "akim",
-			"profPic": "/images/profAlex.png"
+			"profPic": "/images/profAlex.png",
+			"friends": []
 		},
 		{
 			"username": "tim",
 			"email": "marisa.kanemoto@gmail.com",
 			"password": "tim",
-			"profPic": "/images/profTim.png"
+			"profPic": "/images/profTim.png",
+			"friends": []
 		},
 		{
 			"username": "rcaldero",
 			"email": "calderon.rocky@gmail.com",
 			"password": "rcaldero",
-			"profPic": "/images/profRocky.png"
+			"profPic": "/images/profRocky.png",
+			"friends": []
 		}
 	]
 }
