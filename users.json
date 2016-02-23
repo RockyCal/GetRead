@@ -2,6 +2,7 @@
 	"users": [
 		{
 			"username": "test",
+			"fullName": "Jin Hwang",
 			"email": "user@testing.com",
 			"password": "testing",
 			"friends": [
@@ -18,24 +19,28 @@
 		},
 		{ 
 			"username": "mkanemoto",
+			"fullName": "Marisa Kanemoto",
 			"email": "mkanemoto@ucsd.edu",
 			"password": "mkanemoto",
 			"profPic": "/images/profMarisa.png"
 		},
 		{
 			"username": "akim",
+			"fullName": "Alex Kim",
 			"email": "akim0504@ucsd.edu", 
 			"password": "akim",
 			"profPic": "/images/profAlex.png"
 		},
 		{
 			"username": "tim",
+			"fullName": "Tim Dude",
 			"email": "marisa.kanemoto@gmail.com",
 			"password": "tim",
 			"profPic": "/images/profTim.png"
 		},
 		{
 			"username": "rcaldero",
+			"fullName": "Raquel Calderon",
 			"email": "calderon.rocky@gmail.com",
 			"password": "rcaldero",
 			"profPic": "/images/profRocky.png"

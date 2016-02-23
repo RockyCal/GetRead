@@ -63,9 +63,13 @@ function recBookCommunity(e) {
 
 function recBookFriend(e) {
 	e.preventDefault();
-
+	console.log('recommending to friend');
 	var bookTitle = $('.title').text();
-	var url = '/recommend/' + bookTitle;
+	var friend = $('#selFriend').val();
+
+	console.log("selFriend: " + friend);
+
+	var url = '/recommend/' + bookTitle + '/' + friend;
 	$.get(url, function(result) {
 		$('#recBtn').blur();
 		if(result["recommended"]) {
