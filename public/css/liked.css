@@ -2,4 +2,11 @@
  * created: 2/24/16 
  * created by: Marisa Kanemoto / mkanemoto@ucsd.edu */
 
- 
+.book {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.author {
+	font-style: italic;
+}

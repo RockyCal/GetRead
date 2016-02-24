@@ -1,4 +1,4 @@
-<!--filename: public/liked.html 
+<!--filename: public/liked.handlebars 
 	created on: 2/11/16 
 	created by: Marisa Kanemoto | mkanemoto@ucsd.edu --> 
 
@@ -12,21 +12,22 @@
 	<title>Liked</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/liked.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/getRead.css">
+	<link href="css/getRead.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 {{> nav active_liked=true}}
 	<h1 class="page-heading">Liked Books</h1>
 	<hr>
 	{{#each likes}}
-		<div>
-			<p>{{title}}</p>
-			<p>{{author}}</p>
-			<img src="{{coverSource}}" class="img" width="200px" id= "likedCover">
+		<div class="book">
+			<p class="title">{{title}}</p>
+			<p class="author">{{author}}</p>
+			<a href="/book/{{title}}">
+				<img src="{{coverSource}}" class="img" width="200px" id= "likedCover">
+			</a>
 		</div>
 		<hr>
 	{{/each}}
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
