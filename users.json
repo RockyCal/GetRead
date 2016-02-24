@@ -5,16 +5,22 @@
 			"fullName": "Jin Hwang",
 			"email": "user@testing.com",
 			"password": "testing",
-			"profPic": "/images/profile-pic.png",
+			"profPic": "images/profile-pic.png",
 			"friends": [
 				{
 					"username": "mkanemoto"
 				},
 				{
+					"username": "rcaldero"
+				},
+				{
 					"username": "akim"
 				},
 				{
-					"username": "rcaldero"
+					"username": "tim"
+				},
+				{
+					"username": "bagels"
 				}
 			]
 		},
@@ -23,22 +29,15 @@
 			"fullName": "Marisa Kanemoto",
 			"email": "mkanemoto@ucsd.edu",
 			"password": "mkanemoto",
-			"profPic": "/images/profMarisa.png",
-			"friends": [
-				{
-					"username": "akim"
-				},
-				{
-					"username": "rcaldero"
-				}
-			]
+			"profPic": "images/profMarisa.png",
+			"friends": []
 		},
 		{
 			"username": "akim",
 			"fullName": "Alex Kim",
 			"email": "akim0504@ucsd.edu", 
 			"password": "akim",
-			"profPic": "/images/profAlex.png",
+			"profPic": "images/profAlex.png",
 			"friends": []
 		},
 		{
@@ -55,6 +54,14 @@
 			"email": "calderon.rocky@gmail.com",
 			"password": "rcaldero",
 			"profPic": "/images/profRocky.png",
+			"friends": []
+		},
+		{
+			"username": "bagels",
+			"fullName": "A Bagel",
+			"email": "bagels@ucsd.edu",
+			"password": "bagels",
+			"profPic": "/images/bagels.jpg",
 			"friends": []
 		}
 	]
