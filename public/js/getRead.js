@@ -26,7 +26,7 @@ function likeBook(e) {
 		$('#likeBtn').blur();
 		if(result["liked"]) {
 			$('#likeBtn').css({
-				'color':'#',
+				'color':'#F784C9',
 				'background-color': '#fff'
 			});
 		}
