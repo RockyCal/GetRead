@@ -8,14 +8,10 @@ var friends = usersArr[0].friends;
 
 exports.view = function(req, res) {
 	var usersFriends = [];
-	for (i = 0; i < friends.length; i++) {
-		console.log("friends: ")
-		console.log(friends[i]);
-		var thisFriend = findUserByUsername(friends[i].username);
+	for (j = 0; j < friends.length; j++) {
+		var thisFriend = findUserByUsername(friends[j].username);
 		usersFriends.push(thisFriend);
 	}
-	console.log("usersFriends: ")
-	console.log(usersFriends);
 	res.render('friends', {'usersFriends':usersFriends});
 }
 
@@ -26,8 +22,6 @@ function findUserByUsername(uname){
 	for (i = 0; i < usersArr.length; i++) {
 		if (usersArr[i].hasOwnProperty("username") && usersArr[i]["username"] === uname) {
 			var thisFriend = usersArr[i];
-			console.log("thisFriend: ")
-			console.log(thisFriend);
 			return thisFriend;
 		}
 	}
