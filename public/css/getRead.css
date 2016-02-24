@@ -1,3 +1,35 @@
 .page-heading {
 	text-align: center;
 }
+
+.header {
+	background-color: #4D7D9C; 
+	margin-top: 0px;
+	padding: 0.5em 0;
+	margin-bottom: .5em;
+}
+
+.header-brand {
+	font-size: 36px;
+	font-weight: 500;
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+
+.navbar{
+	background-color: #15C87B;
+}
+
+.navbar-default .navbar-nav> li>a{
+	color: white;
+}
+
+.navbar-default .navbar-brand{
+	color: white;
+}
+
+.navbar-header a{
+	color: white;
+
+}
