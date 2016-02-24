@@ -48,7 +48,7 @@ function recBookCommunity(e) {
 		$('#recBtn').blur();
 		if(result["recommended"]) {
 			$('#recBtn').css({
-				'background-color': '#6600cc',
+				'background-color': '#7A21C6',
 				'color': 'white'
 			});
 		}
@@ -74,7 +74,7 @@ function recBookFriend(e) {
 		$('#recBtn').blur();
 		if(result["recommended"]) {
 			$('#recBtn').css({
-				'background-color': '#6600cc',
+				'background-color': '#7A21C6',
 				'color': 'white'
 			});
 		}

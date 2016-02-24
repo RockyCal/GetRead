@@ -38,7 +38,6 @@ exports.view = function(req, res) {
 exports.recBook = function(req, res) {
 	var book = findBookByTitle(req.params.title);
 	var to = req.params.to;
-	console.log('to: ' + to);
 	var user = findUserByUsername(to);
 	if(book.recommended){
 		book.recommended = false;
@@ -54,6 +53,5 @@ exports.recBook = function(req, res) {
 		book.recommended = true;
 		recommendations.push(book);
 	}
-	console.log(recommendations);
 	res.json(book);
 }
