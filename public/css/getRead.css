@@ -33,3 +33,12 @@
 	color: white;
 
 }
+
+.test {
+	position: fixed;
+	bottom: 0;
+}
+
+body {
+	padding-bottom: 50px;
+}
