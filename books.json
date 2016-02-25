@@ -6,15 +6,8 @@
 			"description": "The first installment in the world-famous Harry Potter series.",
 			"coverSource": "/images/harry_potter_sorcerors.jpg",
 			"liked": false,
-			"recommended": false
-		},
-		{
-			"title": "Mathematics",
-			"author": "Author unknown",
-			"description": "A sixth-grade mathematics textbook.",
-			"coverSource": "/images/mathBook.jpg",
-			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		},
 		{ 
 			"title": "The Design of Everyday Things",
@@ -22,7 +15,8 @@
 			"description": "A seminal work by renowned cognitive scientist Don Norman.",
 			"coverSource": "/images/design_everyday_things.gif",
 			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		},
 		{
 			"title": "365 Penguins",
@@ -30,7 +24,8 @@
 			"description": "A family find a penguin mysteriously delivered to their door every day of the year. At first they're cute, but with every passing day the penguins pile up, along with the family's problems. Who on earth is sending these kwaking critters?",
 			"coverSource": "/images/365_penguins.jpg",
 			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		},
 		{
 			"title": "The Koala Book",
@@ -38,7 +33,8 @@
 			"description": "It's no secret that koalas are some of the best-loved creatures in the animal kingdom. Now for the first time, the koala's story is portrayed in a large format with 160 striking photographs and accompanying text.",
 			"coverSource": "/images/the_koala_book.jpg",
 			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		},
 		{
 			"title": "The Cellist of Sarajevo",
@@ -46,7 +42,8 @@
 			"description": "A spare and haunting, wise and beautiful novel about war and the endurance of the human spirit and the subtle ways individuals reclaim their humanity.",
 			"coverSource": "/images/cellist_of_sarajevo.jpg",
 			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		},
 		{
 			"title": "One Punch Man, vol. 1",
@@ -54,7 +51,8 @@
 			"description": "Adapted from the wildly popular webcomic, Yusuke Murata's adaptation of One Punch Man follows the reluctant hero Saitama as he seeks a worthy opponent.",
 			"coverSource": "/images/one_punch_man.png",
 			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		},
 		{
 			"title": "Hop on Pop",
@@ -62,15 +60,17 @@
 			"description": "First published in 1963, Hop on Pop remains a perennial favorite when it comes to teaching kids to read. Here, as in most of his extensive body of work, Dr. Seuss creates uncomplicated, monosyllabic rhymes to foster learning and inspire children to read.",
 			"coverSource": "/images/hop_on_pop.jpg",
 			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		},
 		{
 			"title": "Moonwalking with Einstein: The Art and Science of Remembering Everything",
 			"author": "Joshua Foer",
-			"description": "<i>Moonwalking with Einstein<i> recounts Joshua Foer's yearlong quest to improve his memory under the tutelage of top \"mental athletes.\" He draws on cutting-edge research, a surprising cultural history of remembering, and venerable tricks of the mentalist's trade to transform our understanding of human memory.",
+			"description": "Moonwalking with Einstein recounts Joshua Foer's yearlong quest to improve his memory under the tutelage of top \"mental athletes.\" He draws on cutting-edge research, a surprising cultural history of remembering, and venerable tricks of the mentalist's trade to transform our understanding of human memory.",
 			"coverSource": "/images/moonwalking_with_einstein.jpg",
 			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		},
 		{
 			"title": "The Hobbit",
@@ -78,7 +78,8 @@
 			"description": "Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure.",
 			"coverSource": "/images/the_hobbit.jpg",
 			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		},
 		{
 			"title": "The Art of War",
@@ -86,7 +87,8 @@
 			"description": "Written in the 6th century B.C., The Art of War remains the ultimate guide to combat strategy. Sun Tzu explains when and how to engage opponents in order to prevail in difficult situations. Instead of describing the logistics of warfare, he shows the reader how to succeed by motivating soldiers and leveraging tactical advantages. In short, he explains how to win the battle of wits.",
 			"coverSource": "/images/the_art_of_war.jpg",
 			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		},
 		{
 			"title": "The Sound and the Fury",
@@ -94,7 +96,8 @@
 			"description": "The Sound and the Fury is the tragedy of the Compson family, featuring some of the most memorable characters in literature: beautiful, rebellious Caddy; the manchild Benjy; haunted, neurotic Quentin; Jason, the brutal cynic; and Dilsey, their black servant.",
 			"coverSource": "/images/the_sound_and_the_fury.jpg",
 			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		},
 		{
 			"title": "Their Eyes Were Watching God",
@@ -102,7 +105,8 @@
 			"description": "A deeply soulful novel that comprehends love and cruelty, and separates the big people from the small of heart, without ever losing sympathy for those unfortunates who don’t know how to live properly.",
 			"coverSource": "/images/their_eyes_were_watching_god.jpg",
 			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		},
 		{
 			"title": "Hamlet",
@@ -110,7 +114,8 @@
 			"description": "There is arguably no work of fiction quoted as often as William Shakespeare's Hamlet. This haunting tragedy has touched audiences for centuries. Set in the Kingdom of Denmark, the play dramatises the revenge Prince Hamlet is called to wreak upon his uncle, Claudius by the ghost of Hamlet's father, King Hamlet.",
 			"coverSource": "/images/hamlet.jpg",
 			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		},
 		{
 			"title": "Naruto, vol. 1",
@@ -118,7 +123,8 @@
 			"description": "Young Uzumaki Naruto is a ninja trainee growing up in the Village Hidden in the Leaves. Despite his young age, he dreams of being the strongest ninja in the world, and of being recognized by his village. Believe it!",
 			"coverSource": "/images/naruto_vol1.jpg",
 			"liked": false,
-			"recommended": false
+			"recommended": false,
+			"userRating": 0
 		}
 	]
 }

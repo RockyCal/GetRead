@@ -16,6 +16,10 @@ body {
 	width: 250px;
 }
 
+.rating {
+	font-size: 18px;
+}
+
 .info {
 	padding-right: 10px;
 	padding-left: 10px;
