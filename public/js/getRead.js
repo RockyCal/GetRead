@@ -26,13 +26,15 @@ function likeBook(e) {
 		$('#likeBtn').blur();
 		if(result["liked"]) {
 			$('#likeBtn').css({
-				'color':'#F784C9',
+				'background': 'url("../images/heart2.png") center no-repeat',
+				'background-size':' 66px 60px',
 				'background-color': '#fff'
 			});
 		}
 		else {
 			$('#likeBtn').css({
-				'color': '#333',
+				'background': 'url("../images/heart.png") center no-repeat',
+				'background-size':' 66px 60px',
 				'background-color': '#fff'
 			});
 		}

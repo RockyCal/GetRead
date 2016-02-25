@@ -1,33 +1,43 @@
 .liked {
-	color: red;
+	background: url('../images/heart2.png') center no-repeat;
+	background-size: 66px 60px;
 }
 
 #recBtn {
 	font-weight: 600;
 }
 
-.recommended {
-	background-color: #6600cc;
-	color: white;
+#likeBtn{
+	width: 100px;
+	height: 100px;
+	background: url('../images/heart.png') center no-repeat;
+	background-size: 66px 60px;
+	border-radius: 50%;
+	border-width: 3px;
 }
 
-#login_form {
-	padding: 0 10px;
+
+.cat1 {
+position:relative;
+display: inline-block;
+float:left;
+padding-left: 5%;
+
+}
+.cat2 {
+position: center;
+display: inline-block;
+
 }
 
-.header-subtext {
-	font-weight: 300;
-	color: #333;
-	text-align: center;
-	margin: 0;
-	font-size: 20px;
+.cat3 {
+position:relative;
+display: inline-block;
+float:right;
+padding-right: 5%;
+
 }
 
-.box {
-	background-color: grey;
-	width: 80%;
-	height: 375px;
-}
 .content{
 	padding-top: : 100px;
 }
@@ -40,13 +50,13 @@
 }
 
 .title {
-	color: white;
+	color: black;
 	font-size: 16px;
 	font-weight: 600;
 }
 
 .author {
-	color: white;
+	color: black;
 }
 
 .appTitle {
@@ -66,7 +76,7 @@
 
 #move{
 	width:80%;
-	margin-top: -2%
+	margin-top: -10%
 }
 
 #next{
