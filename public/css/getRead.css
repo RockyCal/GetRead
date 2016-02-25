@@ -39,6 +39,11 @@
 	bottom: 0;
 }
 
-body {
-	padding-bottom: 50px;
+.navbar-btn {
+	padding-left: 30px;
+	padding-right: 30px
+}
+
+.glyphicon {
+	font-size: 14pt;
 }
