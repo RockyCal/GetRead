@@ -34,9 +34,8 @@
 
 }
 
-.test {
+.navbar-fixed-bottom {
 	position: fixed;
-	bottom: 0;
 }
 
 .navbar-btn {
@@ -46,4 +45,8 @@
 
 .glyphicon {
 	font-size: 14pt;
+}
+
+body {
+	padding-bottom: 60px;
 }

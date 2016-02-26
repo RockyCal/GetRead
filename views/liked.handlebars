@@ -15,7 +15,7 @@
 	<link href="css/getRead.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-{{>nav active_liked=true}}
+{{>nav}}
 	<h1 class="page-heading">Liked Books</h1>
 	<hr>
 	{{#each likes}}
@@ -28,8 +28,8 @@
 		</div>
 		<hr>
 	{{/each}}
+{{> bottomnav active_liked=true}}
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-{{> bottomnav active_liked=true}}
 </body>
 </html>

@@ -50,7 +50,7 @@ function recBookCommunity(e) {
 		$('#recBtn').blur();
 		if(result["recommended"]) {
 			$('#recBtn').css({
-				'background-color': '#7A21C6',
+				'background-color': '#15C87B',
 				'color': 'white'
 			});
 		}

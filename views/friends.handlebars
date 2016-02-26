@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/getRead.css">
 </head>
 <body>
-{{> nav active_friends=true}}
+{{> nav}}
 	<h1 class="page-heading">My Friends</h1>
 
 	<center>
@@ -40,35 +40,7 @@
 	</div>
 	{{/each}}
 
-<!--
-	<div class="friend">
-		<div class="picContainer"><img class="profPic img-responsive" src="images/profMarisa.png"></div>
-		<div class="everythingElse">
-			<p class="username">mkanemoto</p>
-			<a href="#" class="btn btn-primary btn-xs" role="button">View Profile</a>
-			<button class="{{#if recommended}} recommended {{/if}}booktBtn btn btn-default" id="recBtn">R</button>
-		</div>
-		<hr />
-	</div>
-	<div class="friend">
-		<div class="picContainer"><img class="profPic img-responsive" src="images/profRocky.png"></div>
-		<div class="everythingElse">
-			<p class="username">rcaldero</p>
-			<a href="#" class="btn btn-primary btn-xs" role="button">View Profile</a>
-			<button class="{{#if recommended}} recommended {{/if}}booktBtn btn btn-default" id="recBtn">R</button>
-		</div>
-		<hr />
-	</div>
-	<div class="friend">
-		<div class="picContainer"><img class="profPic img-responsive" src="images/profTim.png"></div>
-		<div class="everythingElse">
-			<p class="username">tim</p>
-			<a href="#" class="btn btn-primary btn-xs" role="button">View Profile</a>
-			<button class="{{#if recommended}} recommended {{/if}}booktBtn btn btn-default" id="recBtn">R</button>
-		</div>
-		<hr />
-	</div>
--->
+{{> bottomnav active_friends=true}}
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
