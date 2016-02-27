@@ -65,8 +65,10 @@ padding-right: 5%;
 	color: white;
 }
 
-.cover {
+#cover {
 	margin-top: 1em;
+	width: 180px;
+	height: 280px;
 }
 
 .buttons{ 
