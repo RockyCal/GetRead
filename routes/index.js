@@ -5,13 +5,35 @@ var index = 0;
 var prev = books["books"].length-1;
 var next = index + 1;
 var friends = users[0].friends;
+var usersFriends = [];
+
+/* helper function to find users given only their username */
+function findUserByUsername(uname){
+	var friends = friends;
+	var uname = uname;
+	for (i = 0; i < users.length; i++) {
+		if (users[i].hasOwnProperty("username") && users[i]["username"] === uname) {
+			var thisFriend = users[i];
+			return thisFriend;
+		}
+	}
+}
+
+/* helper function to get friends */
+function getFriends() {
+	for (j = 0; j < friends.length; j++) {
+		var thisFriend = findUserByUsername(friends[j].username);
+		usersFriends.push(thisFriend);
+	}
+}
 
 exports.view = function(req, res) {
 	var currentBook = books["books"][index];
 	var title = currentBook.title;
 	var liked = currentBook.liked;
 	var recommended = currentBook.recommended;
-	res.render('index', {currentBook: currentBook, title: title, liked: liked, recommended: recommended, friends: friends});
+	getFriends();
+	res.render('index', {currentBook: currentBook, title: title, liked: liked, recommended: recommended, friends: usersFriends});
 }
 
 exports.nextBook = function(req, res) {
@@ -25,7 +47,8 @@ exports.nextBook = function(req, res) {
 	var title = currentBook.title;
 	var liked = currentBook.liked;
 	var recommended = currentBook.recommended
-	res.render('index', {currentBook: currentBook, title: title, liked: liked, recommended: recommended, friends: friends});
+	getFriends();
+	res.render('index', {currentBook: currentBook, title: title, liked: liked, recommended: recommended, friends: usersFriends});
 }
 
 exports.prevBook = function(req, res) {
@@ -39,6 +62,7 @@ exports.prevBook = function(req, res) {
 	var currentBook = books["books"][index];
 	var title = currentBook.title;
 	var liked = currentBook.liked;
-	var recommended = currentBook.recommended
-	res.render('index', {currentBook: currentBook, title: title, liked: liked, recommended: recommended, friends: friends});
+	var recommended = currentBook.recommended;
+	getFriends();
+	res.render('index', {currentBook: currentBook, title: title, liked: liked, recommended: recommended, friends: usersFriends});
 }

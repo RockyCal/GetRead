@@ -15,6 +15,7 @@ exports.view = function(req, res) {
 	res.render('friends', {'usersFriends':usersFriends});
 }
 
+
 /* helper function to find users given only their username */
 function findUserByUsername(uname){
 	var friends = friends;
