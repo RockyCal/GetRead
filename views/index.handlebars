@@ -29,9 +29,9 @@
 		<center>
 		<div class = "content">
 		<center>
-			<div class = "cat1">
+			<!--<div class = "cat1">
 				<img src="images/profJin.png" class="img img-responsive" width="44px">
-			</div>
+			</div>-->
 
 			<div class = "cat2">
 				<center><a href="/book/{{title}}"><img src="{{currentBook.coverSource}}" class="img img-responsive" id="cover"></a>
@@ -45,11 +45,11 @@
 			</center>
 			</div>
 
-			<div class="cat3">
-				<button class="{{#if recommended}} recommended {{/if}}bookBtn btn btn-default" id="recBtn">
+			<!--<div class="cat3">
+				<button class="bookBtn btn btn-default" id="recBtn">
 					<span class="glyphicon glyphicon-share-alt"></span>
 				</button>
-			</div>
+			</div>-->
 		</center>
 
 		</div>
@@ -57,23 +57,24 @@
 	 
 		<center>  
 		<div class="row buttons">
-			<button class = "{{#if liked}} liked {{/if}} bookBtn btn btn-default" id="likeBtn" type="submit">
+			<a href="/prev" class="btn" id="prev">
+				<span id="prevIcon" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			</a>	
+			<button class = "{{#if liked}} liked {{else}} notLiked{{/if}} bookBtn btn btn-default" id="likeBtn" type="submit">
 			</button>
+			<button class="bookBtn btn btn-default" id="recBtn">
+				<span id="recBtnIcon" class="glyphicon glyphicon-share-alt"></span>
+			</button>
+			<a href="/next" class="btn" id="next">
+				<span id="nextIcon" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			</a>
+			</div>	
 		</div>
 		</center>
 	</div> <!--end of .currentBook-->
 
-	<center>
-		 <div class="row buttons" id="move">
-		<a href="/prev" class="btn btn-default" id="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		</a>	
-
-		<a href="/next" class="btn btn-default" id="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		</a>	
-		</div>
-	</center>
+	<!--<center>
+	</center>-->
 
 	<!-- Recommend Modal -->
 	{{> recommendFriendModal}}
