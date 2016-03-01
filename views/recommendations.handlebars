@@ -56,11 +56,11 @@
 	{{#each recommendations}}
 	<div class = "boxes">
 		<div class = "container1" id = "pic">
-			<img src="{{coverSource}}" class="img img-responsive" width = "60px">
+			<img src="{{book.coverSource}}" class="img img-responsive" width = "60px">
 		</div>
 
 		<div class = "container2" id ="info">
-			<p> <mark>You</mark> recommended {{title}} {{#if toFriend}}to {{toFullName}}{{/if}}</p>
+			<p> <mark>You</mark> recommended {{book.title}} to {{toFullName}}</p>
 		
 		</div>
 	</div>
