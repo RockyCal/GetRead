@@ -18,24 +18,23 @@
 
 
 .cat1 {
-position:relative;
-display: inline-block;
-float:left;
-padding-left: 5%;
-
+	position: relative;
+	display: inline-block;
+	float: left;
+	padding-left: 2%;
 }
-.cat2 {
-position: center;
-display: inline-block;
 
+.cat2 {
+	position: center;
+	display: inline-block;
+	width: 65%;
 }
 
 .cat3 {
-position:relative;
-display: inline-block;
-float:right;
-padding-right: 5%;
-
+	position: relative;
+	display: inline-block;
+	float: right;
+	padding-right: 2%;
 }
 
 .content{
