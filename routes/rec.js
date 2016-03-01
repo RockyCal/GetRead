@@ -39,19 +39,12 @@ exports.recBook = function(req, res) {
 	var book = findBookByTitle(req.params.title);
 	var to = req.params.to;
 	var user = findUserByUsername(to);
-	if(book.recommended){
-		book.recommended = false;
-		var idx = recommendations.indexOf(book)
-		recommendations.splice(idx, 1);
+	recommendation = {
+		"book": book,
+		"to": to,
+		"toFullName": user.fullName
 	}
-	else{
-		if(to){
-			book.toFriend = true;
-			book.to = to;
-			book.toFullName = user.fullName;
-		}
-		book.recommended = true;
-		recommendations.push(book);
-	}
+	book.recommended = true;
+	recommendations.splice(0, 0, recommendation);
 	res.json(book);
 }

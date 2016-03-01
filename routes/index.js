@@ -21,6 +21,7 @@ function findUserByUsername(uname){
 
 /* helper function to get friends */
 function getFriends() {
+	usersFriends = [];
 	for (j = 0; j < friends.length; j++) {
 		var thisFriend = findUserByUsername(friends[j].username);
 		usersFriends.push(thisFriend);
