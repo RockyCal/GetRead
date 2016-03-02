@@ -29,12 +29,15 @@
 		<center>
 		<div class = "content">
 		<center>
-			<!--<div class = "cat1">
-				<img src="images/profJin.png" class="img img-responsive" width="44px">
-			</div>-->
+
+			<div class = "cat1">
+				<img src= "{{currentBook.friend}}" class="img img-responsive" width="44px">
+			</div>
+
 
 			<div class = "cat2">
 				<center><a href="/book/{{title}}"><img src="{{currentBook.coverSource}}" class="img img-responsive" id="cover"></a>
+         
 			</center>
 
 			<center>
@@ -45,11 +48,9 @@
 			</center>
 			</div>
 
-			<!--<div class="cat3">
-				<button class="bookBtn btn btn-default" id="recBtn">
-					<span class="glyphicon glyphicon-share-alt"></span>
-				</button>
-			</div>-->
+			<div class="cat3">
+				
+			</div>
 		</center>
 
 		</div>
@@ -84,5 +85,7 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/getRead.js"></script>
+  {{> googleAnalytics}}
+
 	</body>
 </html>
