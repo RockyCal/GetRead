@@ -14,6 +14,12 @@ function initializePage() {
 		$("#recommendFriendModal").modal();
 	})
 	$('#recommendToFriendSubmit').click(recBookFriend);
+	$('#likeBtn').click(likeClick);
+	$('#recBtn').click(recClick);
+	$('#home').click(homeClick);
+	$('#liked').click(historyClick);
+	$('#friends').click(friendsClick);
+	$('#profile').click(profileClick);
 }
 
 function likeBook(e) {
@@ -62,4 +68,30 @@ function recBookFriend(e) {
 			});
 		}
 	})
+}
+
+/* note: likeClick is for the big heart button, historyClick is for the navbar page */
+function likeClick(e) {
+	ga("send", "event", "like", "click");
+}
+
+function recClick(e) {
+	ga("send", "event", "recommend", "click");
+}
+
+function homeClick(e) {
+	ga("send", "event", "home", "click");
+}
+
+/* note: historyClick is for the navbar "liked books" page, not the heart button */
+function historyClick(e) {
+	ga("send", "event", "history", "click");
+}
+
+function friendsClick(e) {
+	ga("send", "event", "friends", "click");
+}
+
+function profileClick(e) {
+	ga("send", "event", "profile", "click");
 }
