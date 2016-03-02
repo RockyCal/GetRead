@@ -3,7 +3,6 @@
 	created by: Marisa Kanemoto | mkanemoto@ucsd.edu --> 
 
 <!doctype HTML>
-
 <html> 
 <head>
 	<meta charset="utf-8">
@@ -15,12 +14,9 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/getRead.css">
-	<link rel="stylesheet" type="text/css" href="css/getRead.css">
-	
 </head>
 <body>
-{{> nav}}
-
+	{{> nav}}
 	<!-- content goes here -->
 	<div class="boxes">
 		<div class="container1" id="pic">
@@ -34,27 +30,19 @@
 	</div>
 
 	<!-- feed starts here -->
-	<h2> Recent Activity </h2>
+	<h2 class="page-heading"> Recent Activity </h2>
 	<hr>
 	{{#each recommendations}}
 	<div class="boxes">
 		<div class="container1" id="pic">
 			<img src="{{book.coverSource}}" class="bookCover img img-responsive">
 		</div>
-<<<<<<< HEAD
 		<div class="container2" id="info">
 			<p> <mark>You</mark> recommended <i>{{book.title}}</i> to {{toFullName}}</p>
-=======
-
-		<div class = "container2" id ="info">
-			<p> <mark>You</mark> recommended <i>{{book.title}}</i> to {{toFullName}}</p>
-		
->>>>>>> layoutB
 		</div>
 	</div>
 	<hr />
 	{{/each}}
-
 	<div class="boxes">
 		<div class="container1" id="pic">
 			<img src="images/the_koala_book.jpg" class="bookCover img img-responsive">
@@ -64,15 +52,9 @@
 		</div>
 	</div>
 	<hr>
-<<<<<<< HEAD
 <!-- commented out on 3/1/16 because we don't really have these functions rn
-	<div class="boxes">
-		<div class="container1" id="pic">
-=======
-<!--
 	<div class = "boxes">
 		<div class = "container1" id = "pic">
->>>>>>> layoutB
 			<img src="images/goldHeart.png" class="img img-responsive" width = "60px">
 		</div>
 
@@ -95,20 +77,6 @@
 	</div>
 	<hr>
 -->
-<<<<<<< HEAD
-	<div class="boxes">
-		<div class="container1" id="pic">
-			<img src="images/harry_potter_sorcerors.jpg" class="bookCover img img-responsive">
-=======
-	<div class = "boxes">
-		<div class = "container1" id = "pic">
-			<img src="images/harry_potter_sorcerors.jpg" class="img img-responsive" width = "60px">
->>>>>>> layoutB
-		</div>
-		<div class="container2" id="info">
-			<p> <mark>Marisa Kanemoto</mark> recommended <i>Harry Potter and the Sorceror's Stone</i> to you</p>
-		</div>
-	</div>
 {{> bottomnav active_recommendations=true}}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
