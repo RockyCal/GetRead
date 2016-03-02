@@ -51,7 +51,7 @@ function recBookFriend(e) {
 		$('#recBtn').blur();
 		if(result["recommended"]) {
 			$('#recBtn').css({
-				'background-color': '#7A21C6',
+				
 				'color': 'white'
 			});
 		}
