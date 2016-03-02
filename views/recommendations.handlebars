@@ -22,93 +22,72 @@
 {{> nav}}
 
 	<!-- content goes here -->
-	<div class = "boxes">
-		<div class = "container1" id = "pic">
-			<img src="images/profJin.png" class="img img-responsive" width = "120px">
+	<div class="boxes">
+		<div class="container1" id="pic">
+			<img src="images/profJin.png" class="profPic img img-responsive">
 		</div>
-
-		<div class = "container2" id ="info">
+		<div class="container2" id="info">
 			<h3> Jin Hwang (Demo) </h3>
-			<p> 42 reccomendations</p>
+			<p> 42 recommendations</p>
 			<p> 28 likes </p>
 		</div>
 	</div>
-	
-	<!-- selector 2 shit that i may or may not revisit later 
-	<nav>
-	<ul>
-		<li><a href="#">Pages:</a>
-			<ul>
-				<li><a href="userReceived.html">Books recommended to you</a></li>
-				<li><a href="userRecommended.html">Books you've recommended</a></li>
-				<li><a href="newRec.html">Send new recommendations</a></li>
-			</ul>
-		</li>
-	</ul>
-	</nav>
-	<hr />
-	--> 
+
 	<!-- feed starts here -->
-	<div class="boxes">
-		<h2> Recent Activity </h2>
-	</div>
+	<h2> Recent Activity </h2>
 	<hr>
 	{{#each recommendations}}
-	<div class = "boxes">
-		<div class = "container1" id = "pic">
-			<img src="{{book.coverSource}}" class="img img-responsive" width = "60px">
+	<div class="boxes">
+		<div class="container1" id="pic">
+			<img src="{{book.coverSource}}" class="bookCover img img-responsive">
 		</div>
-
-		<div class = "container2" id ="info">
-			<p> <mark>You</mark> recommended {{book.title}} to {{toFullName}}</p>
-		
+		<div class="container2" id="info">
+			<p> <mark>You</mark> recommended <i>{{book.title}}</i> to {{toFullName}}</p>
 		</div>
 	</div>
-	<hr>
+	<hr />
 	{{/each}}
 
-	<div class = "boxes">
-		<div class = "container1" id = "pic">
-			<img src="images/the_koala_book.jpg" class="img img-responsive" width = "60px">
+	<div class="boxes">
+		<div class="container1" id="pic">
+			<img src="images/the_koala_book.jpg" class="bookCover img img-responsive">
 		</div>
-
-		<div class = "container2" id ="info">
-			<p> <mark>Kevin Lim</mark> recommended The Koala Book to you </p>
-		
+		<div class="container2" id="info">
+			<p> <mark>Kevin Lim</mark> recommended <i>The Koala Book</i> to you </p>
 		</div>
 	</div>
 	<hr>
-	<div class = "boxes">
-		<div class = "container1" id = "pic">
+<!-- commented out on 3/1/16 because we don't really have these functions rn
+	<div class="boxes">
+		<div class="container1" id="pic">
 			<img src="images/goldHeart.png" class="img img-responsive" width = "60px">
 		</div>
 
-		<div class = "container2" id ="info">
+		<div class="container2" id ="info">
 			<p> <mark>Marisa</mark> liked your recommendation Naruto!</p>
 		
 		</div>
 	</div>
 	<hr />
 
-	<div class = "boxes">
-		<div class = "container1" id = "pic">
+	<div class="boxes">
+		<div class="container1" id="pic">
 			<img src="images/book2book.png" class="img img-responsive" width = "60px">
 		</div>
 
-		<div class = "container2" id ="info">
+		<div class="container2" id="info">
 			<p> <mark> Alex Kim </mark> recommended One Punch Man </p>
 		
 		</div>
 	</div>
 	<hr>
-	<div class = "boxes">
-		<div class = "container1" id = "pic">
-			<img src="images/harry_potter_sorcerors.jpg" class="img img-responsive" width = "60px">
+-->
+	<div class="boxes">
+		<div class="container1" id="pic">
+			<img src="images/harry_potter_sorcerors.jpg" class="bookCover img img-responsive">
 		</div>
-
-		<div class = "container2" id ="info">
-			<p> <mark>Marisa</mark> recommended Harry Potter and the Sorceror's Stone to you </p>
-		
+		<div class="container2" id="info">
+			<p> <mark>Marisa Kanemoto</mark> recommended <i>Harry Potter and the Sorceror's Stone</i> to you</p>
 		</div>
 	</div>
 {{> bottomnav active_recommendations=true}}

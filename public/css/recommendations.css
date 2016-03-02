@@ -1,21 +1,47 @@
 .boxes {
 	display: inline-block;
-
 }
 
-#pic{
-	padding-left: 20px;
-	float:left;
+.profPic {
+	width: 80px;
+	padding-left: 2%;
+	float: left;
 }
 
-#info{
+#pic {
+	padding-left: 5%;
+	float: left;
+	width: 110px;
+}
+
+.bookCover {
+	padding-left: 5%;
+	float: left;
+}
+
+#info {
 	margin-top: -10px;
 	padding-left: 20px;
 	float: right;
+}
 
+.container1 {
+	width: 15%;
 }
 
 .container2 {
-	width: 200px;
+	width: 60%;
+	margin-top: -10px;
+	padding-left: 20px;
+	padding-right: 5%;
+	float: right;
+}
 
+body {
+	padding-left: 2%;
+}
+
+h2 {
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
