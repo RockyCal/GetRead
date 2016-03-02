@@ -105,3 +105,9 @@
 	font-size: 35pt;
 	color: #ccc;
 }
+
+.userProfPic {
+	width: 44px;
+	padding-top: 1%;
+	padding-right: 1%;
+}
