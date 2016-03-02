@@ -31,7 +31,10 @@
 
 .navbar-header a{
 	color: white;
+}
 
+.userProfPic {
+	float: right;
 }
 
 .navbar-fixed-bottom {

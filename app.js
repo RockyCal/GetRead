@@ -45,12 +45,15 @@ if ('development' == app.get('env')) {
 
 // Add routes 
 app.get('/', index.view);
+app.get('/alt', index.viewAlt);
 app.get('/likedBooks', like.viewLikes);  // view liked books
 app.get('/recommendations', rec.view);   // view recommendations
 app.get('/history', history.view)
 app.get('/book/:title', bookpage.viewBooks);
 app.get('/next', index.nextBook);
 app.get('/prev', index.prevBook);
+app.get('/nextAlt', index.nextBookAlt);
+app.get('/prevAlt', index.prevBookAlt);
 app.get('/like/:title', like.likeBook);
 app.get('/recommend/:title/:to', rec.recBook);
 app.get('/signup', user.view);
