@@ -1,0 +1,88 @@
+.liked {
+	background: url('../images/heart2.png') center no-repeat;
+	background-size: 66px 60px;
+}
+
+#recBtn {
+	font-weight: 600;
+}
+
+#likeBtn{
+	width: 100px;
+	height: 100px;
+	background: url('../images/heart.png') center no-repeat;
+	background-size: 66px 60px;
+	border-radius: 50%;
+	border-width: 3px;
+}
+
+.cat1 {
+	position: relative;
+	display: inline-block;
+	float: left;
+	padding-left: 2%;
+}
+
+.cat2 {
+	position: center;
+	display: inline-block;
+	width: 65%;
+}
+
+.cat3 {
+	position: relative;
+	display: inline-block;
+	float: right;
+	padding-right: 2%;
+}
+
+.content{
+	padding-top: : 100px;
+}
+
+.info {
+	margin-top: 0.25em;
+	width: 80%;
+	height: 6em;
+	text-align: center;
+}
+
+.title {
+	color: black;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.author {
+	color: black;
+}
+
+.appTitle {
+	margin: 0;
+	padding-top: 2px;
+	color: white;
+}
+
+#cover {
+	margin-top: 1em;
+	width: 180px;
+	height: 280px;
+}
+
+.buttons { 
+	width: 45%;
+	margin-top: 1%;
+}
+
+#move{
+	width:80%;
+	margin-top: -10%
+}
+
+#next{
+	float:right;
+}
+
+#prev{
+	float: left;
+}

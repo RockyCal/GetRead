@@ -1,17 +1,33 @@
 .liked {
 	background: url('../images/heart2.png') center no-repeat;
-	background-size: 66px 60px;
+	background-size: 46.2px 42px;
+}
+
+.notLiked {
+	background: url('../images/heart.png') center no-repeat;
+	background-size: 46.2px 42px;
+}
+
+.bookBtn {
+	margin: 0 8px;
 }
 
 #recBtn {
-	font-weight: 600;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	border-width: 3px;
 }
 
-#likeBtn{
-	width: 100px;
-	height: 100px;
-	background: url('../images/heart.png') center no-repeat;
-	background-size: 66px 60px;
+#recBtnIcon {
+	color: #15C87B;
+	font-size: 30pt;
+}
+
+#likeBtn {
+	width: 75px;
+	height: 75px;
+	background-size: 46.2px 42px;
 	border-radius: 50%;
 	border-width: 3px;
 }
@@ -38,6 +54,7 @@
 
 .content{
 	padding-top: : 100px;
+	margin-right: 50px;
 }
 
 .info {
@@ -69,8 +86,8 @@
 	height: 280px;
 }
 
-.buttons { 
-	width: 45%;
+.buttons{ 
+	width: 100%;
 	margin-top: 1%;
 }
 
@@ -79,10 +96,23 @@
 	margin-top: -10%
 }
 
-#next{
-	float:right;
+#nextIcon {
+	font-size: 35pt;
+	color: #ccc;
 }
 
-#prev{
-	float: left;
+#prevIcon {
+	font-size: 35pt;
+	color: #ccc;
+}
+
+.userProfPic {
+	width: 44px;
+	padding-top: 1%;
+	padding-right: 1%;
+}
+
+.btn {
+	/*padding: 6px 6px;*/
+	padding: 2% 2%;
 }

@@ -32,14 +32,14 @@ function likeBook(e) {
 		if(result["liked"]) {
 			$('#likeBtn').css({
 				'background': 'url("../images/heart2.png") center no-repeat',
-				'background-size':' 66px 60px',
+				'background-size':' 46.2px 42px',
 				'background-color': '#fff'
 			});
 		}
 		else {
 			$('#likeBtn').css({
 				'background': 'url("../images/heart.png") center no-repeat',
-				'background-size':' 66px 60px',
+				'background-size':' 46.2px 42px',
 				'background-color': '#fff'
 			});
 		}
@@ -57,7 +57,7 @@ function recBookFriend(e) {
 		$('#recBtn').blur();
 		if(result["recommended"]) {
 			$('#recBtn').css({
-				'background-color': '#7A21C6',
+				
 				'color': 'white'
 			});
 		}
@@ -95,6 +95,3 @@ function friendsClick(e) {
 function profileClick(e) {
 	ga("send", "event", "profile", "click");
 }
-
-
-
