@@ -15,8 +15,9 @@
 </head>
 <body>
 {{> nav}}
+<div class="container">
 	<h1 class="page-heading">My Friends</h1>
-
+<!--
 	<center>
 		<form class="navbar-form navbar-center" role="search">
 			<div class="form-group">
@@ -25,21 +26,21 @@
 			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 		</form>
 	</center>
-
+-->
 	<hr />
 
 	{{#each usersFriends}}
 	<div class="friend">
 		<div class="picContainer"><img class="profPic img-responsive" src="{{profPic}}"></div>
 		<div class="everythingElse">
-			<p class="username">{{username}}</p>
 			<p class="username">{{fullName}}</p>
-			<a href="#" class="btn btn-primary btn-xs" role="button">View Profile</a>
+			<p class="username">username: <i>{{username}}</i></p>
+			<!--<a href="#" class="btn btn-primary btn-xs" role="button">View Profile</a>-->
 		</div>
-		<hr />
 	</div>
+	<hr />
 	{{/each}}
-
+</div>
 {{> bottomnav active_friends=true}}
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

@@ -1,4 +1,4 @@
-<!-- filename: index.html
+<!-- filename: index.handlebars
 	 created: 2/3/16 
 	 created by: Alex Kim -->
 
@@ -28,25 +28,21 @@
 	{{> nav}}
 	<div id="{{currentBook.title}}" class="currentBook">
 		<center>
-		<div class = "content">
+		<div class="content">
+
 		<center>
-			<div class = "cat1">
+			<div class="cat1">
 				<img src= "{{currentBook.friend}}" class="img img-responsive" width="44px">
 			</div>
-			<div class = "cat2">
+			<div class="cat2">
 				<center><a href="/book/{{title}}"><img src="{{currentBook.coverSource}}" class="img img-responsive" id="cover"></a> 
 			</center>
-
 			<center>
 				<div class="info">
 				<div class="title">{{currentBook.title}}</div>
 				<div class="author">{{currentBook.author}}</div>
 				</div>
 			</center>
-			</div>
-
-			<div class="cat3">
-				
 			</div>
 		</center>
 
@@ -58,9 +54,9 @@
 			<a href="/prev" class="btn" id="prev">
 				<span id="prevIcon" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 			</a>	
-			<button class = "{{#if liked}} liked {{else}} notLiked{{/if}} bookBtn btn btn-default" id="likeBtn" type="submit">
+			<button class="{{#if liked}} liked {{else}} notLiked{{/if}} bookBtn btn btn-default img-responsive" id="likeBtn" type="submit">
 			</button>
-			<button class="bookBtn btn btn-default" id="recBtn">
+			<button class="bookBtn btn btn-default img-responsive" id="recBtn">
 				<span id="recBtnIcon" class="glyphicon glyphicon-share-alt"></span>
 			</button>
 			<a href="/next" class="btn" id="next">

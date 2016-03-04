@@ -9,10 +9,10 @@
 	float: left;
 }
 
-
 .everythingElse {
 	float: right;
-	margin-left: 50px;
+	margin-left: 40px;
+	margin-top: 15px;
 }
 
 .username {
@@ -20,8 +20,21 @@
 }
 
 .profPic {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
+}
+
+.container {
+	padding-left: 2%;
+}
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+p {
+	margin-bottom: 5px;
 }
 
 

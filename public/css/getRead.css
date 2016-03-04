@@ -3,7 +3,7 @@
 }
 
 .header {
-	background-color: #15C87B; 
+	background-color: #21C69F; 
 	margin-top: 0px;
 	padding: 0.5em 0;
 	margin-bottom: .5em;
@@ -18,7 +18,15 @@
 }
 
 .navbar {
-	background-color: #15C87B;
+	background-color: #21C69F;
+}
+
+#navbar-top {
+	margin-bottom: 10px
+}
+
+.navbar-default {
+	border: none;
 }
 
 .navbar-default .navbar-nav> li>a{
@@ -33,9 +41,8 @@
 	color: white;
 }
 
-.userProfPic {
+.navName {
 	float: right;
-	width: 44px;
 	padding-top: 1%;
 	padding-right: 1%;
 }
@@ -46,12 +53,21 @@
 
 .navbar-btn {
 	width: 20%;
+	background-color: #21C69F;
 }
 
 .glyphicon {
 	font-size: 14pt;
+	color: #fff;
+}
+
+
+
+.btn.active {
+	background-color: #1BA39C;
 }
 
 body {
 	padding-bottom: 60px;
 }
+
