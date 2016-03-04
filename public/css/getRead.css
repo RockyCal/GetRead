@@ -35,6 +35,9 @@
 
 .userProfPic {
 	float: right;
+	width: 44px;
+	padding-top: 1%;
+	padding-right: 1%;
 }
 
 .navbar-fixed-bottom {
