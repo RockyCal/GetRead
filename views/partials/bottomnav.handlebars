@@ -1,20 +1,19 @@
 <nav class="navbar navbar-default navbar-fixed-bottom">
 	<div class="container-fluid">
-	<center>
-<!--horizontal and uses buttons-->
-
-	<a href="/" class="{{#if active_home}}active{{/if}}" id="home">
-		<button type="button" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-home"></span></button>
-	</a>
-	<a href="/likedBooks" class="{{#if active_liked}}active{{/if}}" id="liked">
-		<button type="button" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-heart"></span></button>
-	</a>
-	<a href="/friends" class="{{#if active_liked}}active{{/if}}" id="friends">
-		<button type="button" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-book"></span></button>
-	</a>
-	<a href="/recommendations" class="{{#if active_liked}}active{{/if}}" id="profile">
-		<button type="button" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-user"></span></button>
-	</a>
+		<center>
+		<!--horizontal and uses buttons-->
+		<a href="/" id="home">
+				<button type="button" class="{{#if active_home}}active{{/if}} btn btn-default navbar-btn "><span class="glyphicon glyphicon-home"></span></button>
+		</a>
+		<a href="/likedBooks" id="liked">
+			<button type="button" class="{{#if active_liked}}active{{/if}} btn btn-default navbar-btn"><span class="glyphicon glyphicon-heart"></span></button>
+		</a>
+		<a href="/friends" id="friends">
+			<button type="button" class="{{#if active_friends}}active{{/if}} btn btn-default navbar-btn"><span class="glyphicon glyphicon-book"></span></button>
+		</a>
+		<a href="/recommendations" id="profile">
+			<button type="button" class="{{#if active_recommendations}}active{{/if}} btn btn-default navbar-btn"><span class="glyphicon glyphicon-user"></span></button>
+		</a>
 
 <!-- horizontal, doesn't use buttons -->
 <!--
