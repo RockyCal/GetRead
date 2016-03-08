@@ -11,6 +11,16 @@
 			"recommended": false,
 			"userRating": 0
 		},
+		{
+			"title": "365 Penguins",
+			"author": "Jean-Luc Fromental",
+			"description": "A family find a penguin mysteriously delivered to their door every day of the year. At first they're cute, but with every passing day the penguins pile up, along with the family's problems. Who on earth is sending these kwaking critters?",
+			"coverSource": "/images/365_penguins.jpg",
+			"friend" : "/images/profTim.png",
+			"liked": false,
+			"recommended": false,
+			"userRating": 0
+		},
 		{ 
 			"title": "The Design of Everyday Things",
 			"author": "Donald A. Norman",
@@ -22,21 +32,21 @@
 			"userRating": 0
 		},
 		{
-			"title": "365 Penguins",
-			"author": "Jean-Luc Fromental",
-			"description": "A family find a penguin mysteriously delivered to their door every day of the year. At first they're cute, but with every passing day the penguins pile up, along with the family's problems. Who on earth is sending these kwaking critters?",
-			"coverSource": "/images/365_penguins.jpg",
-			"friend" : "/images/profTim.png",
-			"liked": false,
-			"recommended": false,
-			"userRating": 0
-		},
-		{
 			"title": "The Koala Book",
 			"author": "Ann Sharp",
 			"description": "It's no secret that koalas are some of the best-loved creatures in the animal kingdom. Now for the first time, the koala's story is portrayed in a large format with 160 striking photographs and accompanying text.",
 			"coverSource": "/images/the_koala_book.jpg",
 			"friend" : "/images/profRocky.png",
+			"liked": false,
+			"recommended": false,
+			"userRating": 0
+		},
+		{
+			"title": "Their Eyes Were Watching God",
+			"author": "Zora Neale Hurston",
+			"description": "A deeply soulful novel that comprehends love and cruelty, and separates the big people from the small of heart, without ever losing sympathy for those unfortunates who don’t know how to live properly.",
+			"coverSource": "/images/their_eyes_were_watching_god.jpg",
+			"friend" : "/images/profMarisa.png",
 			"liked": false,
 			"recommended": false,
 			"userRating": 0
@@ -107,16 +117,6 @@
 			"description": "The Sound and the Fury is the tragedy of the Compson family, featuring some of the most memorable characters in literature: beautiful, rebellious Caddy; the manchild Benjy; haunted, neurotic Quentin; Jason, the brutal cynic; and Dilsey, their black servant.",
 			"coverSource": "/images/the_sound_and_the_fury.jpg",
 			"friend" : "/images/profRocky.png",
-			"liked": false,
-			"recommended": false,
-			"userRating": 0
-		},
-		{
-			"title": "Their Eyes Were Watching God",
-			"author": "Zora Neale Hurston",
-			"description": "A deeply soulful novel that comprehends love and cruelty, and separates the big people from the small of heart, without ever losing sympathy for those unfortunates who don’t know how to live properly.",
-			"coverSource": "/images/their_eyes_were_watching_god.jpg",
-			"friend" : "/images/profMarisa.png",
 			"liked": false,
 			"recommended": false,
 			"userRating": 0
