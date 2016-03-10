@@ -25,9 +25,12 @@
 				</form>
         	</div>
         	<div class="modal-footer">
-        		<button id="recommendToFriendSubmit" type="button" class="btn btn-primary" data-dismiss="modal">Recommend!</button>
+        		<button id="recommendToFriendSubmit" type="button" class="btn btn-primary" data-toggle="modal" data-target="#recommendFriendSuccessModal"data-dismiss="modal">Recommend!</button>
         		<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         	</div>
 		</div>
 	</div>
 </div>
+
+<!-- Recommend to friend success modal -->
+{{> recommendFriendSuccessModal}}
