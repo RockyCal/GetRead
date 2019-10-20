@@ -1,6 +1,9 @@
 <!-- filename: index.handlebars
 	 created: 2/3/16 
-	 created by: Alex Kim -->
+	 created by: Alex Kim 
+	 modified: 10/20/19
+	 modified by: Raquel Calderon
+	-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,45 +29,39 @@
 	</head>
 	<body>
 	{{> nav}}
-	<div id="{{currentBook.title}}" class="currentBook">
-		<center class="content-center">
-		<div class="content">
-
-		<center>
-			<div class="cat1">
-				<img src= "{{currentBook.friend}}" class="img img-responsive" width="44px">
-			</div>
-			<div class="cat2">
-				<center><a href="/book/{{title}}"><img src="{{currentBook.coverSource}}" class="img-responsive img" id="cover"></a> 
-			</center>
-			<center>
-				<div class="info">
-				<div class="title">{{currentBook.title}}</div>
-				<div class="author">{{currentBook.author}}</div>
+	<div id="{{currentBook.title}}">
+		<div class="flex-center column">
+			<div class="my-row">
+				<div id="content-container">
+					<div class="my-row pos-r width-100">
+						<div id="friend-icon">
+							<img src= "{{currentBook.friend}}" class="img img-responsive" width="44px">
+						</div>	
+						<div>
+							<a href="/book/{{title}}"><img src="{{currentBook.coverSource}}" class="img" id="cover"></a>
+						</div>
+					</div>
+					<div>
+						<div class="info center-text"></div>
+						<div class="title center-text">{{currentBook.title}}</div>
+						<div class="author center-text">{{currentBook.author}}</div>
+					</div>
+					<div class="row buttons flex-center">
+						<a href="/prev" class="btn" id="prev">
+							<span id="prevIcon" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						</a>	
+						<button class="{{#if liked}}liked {{else}}notLiked{{/if}} bookBtn btn btn-default img-responsive" id="likeBtn" type="submit">
+						</button>
+						<button class="bookBtn btn btn-default img-responsive" id="recBtn">
+							<span id="recBtnIcon" class="glyphicon glyphicon-share-alt"></span>
+						</button>
+						<a href="/next" class="btn" id="next">
+							<span id="nextIcon" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						</a>
+					</div>
 				</div>
-			</center>
 			</div>
-		</center>
-
 		</div>
-		</center>
-	 
-		<center>  
-		<div class="row buttons">
-			<a href="/prev" class="btn" id="prev">
-				<span id="prevIcon" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			</a>	
-			<button class="{{#if liked}} liked {{else}} notLiked{{/if}} bookBtn btn btn-default img-responsive" id="likeBtn" type="submit">
-			</button>
-			<button class="bookBtn btn btn-default img-responsive" id="recBtn">
-				<span id="recBtnIcon" class="glyphicon glyphicon-share-alt"></span>
-			</button>
-			<a href="/next" class="btn" id="next">
-				<span id="nextIcon" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			</a>
-			</div>	
-		</div>
-		</center>
 	</div> <!--end of .currentBook-->
 
 	<!--<center>

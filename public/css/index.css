@@ -17,6 +17,9 @@
 	height: 75px;
 	border-radius: 50%;
 	border-width: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #recBtnIcon {
@@ -27,38 +30,38 @@
 #likeBtn {
 	width: 75px;
 	height: 75px;
-	background-size: 46.2px 42px;
 	border-radius: 50%;
 	border-width: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.cat1 {
-	position: relative;
-	display: inline-block;
-	float: left;
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.my-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+}
+
+.center-text {
+	text-align: center
+}
+
+#friend-icon {
 	padding-left: 2%;
-}
-
-.cat2 {
-	position: center;
-	display: inline-block;
-	width: 65%;
-}
-
-.cat3 {
-	position: relative;
-	display: inline-block;
-	float: right;
-	padding-right: 2%;
-}
-
-.content-center {
-	height: 63vh;
-}
-
-.content{
-	padding-top: : 100px;
-	margin-right: 50px;
+	position: absolute;
+	right: 90%;
 }
 
 .info {
@@ -87,7 +90,6 @@
 }
 
 .buttons{ 
-	width: 100%;
 	margin-top: 1%;
 }
 
@@ -106,7 +108,10 @@
 	color: #ccc;
 }
 
-.btn {
-	/*padding: 6px 6px;*/
-	padding: 2% 2%;
+.pos-r {
+	position: relative;
+}
+
+.width-100 {
+	width: 100vw
 }
