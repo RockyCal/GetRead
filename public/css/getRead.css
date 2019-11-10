@@ -21,10 +21,6 @@
 	background-color: #21C69F;
 }
 
-#navbar-top {
-	margin-bottom: 10px
-}
-
 .navbar-default {
 	border: none;
 }
@@ -67,8 +63,3 @@
 .btn.active {
 	background-color: #1BA39C;
 }
-
-body {
-	padding-bottom: 60px;
-}
-
